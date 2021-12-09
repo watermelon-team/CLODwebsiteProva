@@ -40,7 +40,7 @@ document.addEventListener("scroll", function(e) {
 
     var divOffset = offset(div);
 
-    if (window.scrollY >= (divOffset.top - 100) && window.scrollY <= (divOffset.top + 500)) {
+    if (window.scrollY >= (divOffset.top - 100) && window.scrollY <= (divOffset.top + 1000)) {
       console.log('uguale!');
 
       techTotal.each(function(i) {
@@ -51,42 +51,42 @@ document.addEventListener("scroll", function(e) {
       tech02.addClass('techInactive');
       tech02.removeClass('techActive');
 
-    } else if (window.scrollY >= (divOffset.top + 500) && window.scrollY <= (divOffset.top + 1000)) {
+    } else if (window.scrollY >= (divOffset.top + 1000) && window.scrollY <= (divOffset.top + 2000)) {
       tech02.addClass('techActive');
       tech02.removeClass('techInactive');
 
       tech03.addClass('techInactive');
       tech03.removeClass('techActive');
 
-    } else if (window.scrollY >= (divOffset.top + 1000) && window.scrollY <= (divOffset.top + 1500)) {
+    } else if (window.scrollY >= (divOffset.top + 2000) && window.scrollY <= (divOffset.top + 3000)) {
       tech03.addClass('techActive');
       tech03.removeClass('techInactive');
 
       tech04.addClass('techInactive');
       tech04.removeClass('techActive');
 
-    } else if (window.scrollY >= (divOffset.top + 1500) && window.scrollY <= (divOffset.top + 2000)) {
+    } else if (window.scrollY >= (divOffset.top + 3000) && window.scrollY <= (divOffset.top + 4000)) {
       tech04.addClass('techActive');
       tech04.removeClass('techInactive');
 
       tech05.addClass('techInactive');
       tech05.removeClass('techActive');
 
-    } else if (window.scrollY >= (divOffset.top + 2000) && window.scrollY <= (divOffset.top + 2500)) {
+    } else if (window.scrollY >= (divOffset.top + 4000) && window.scrollY <= (divOffset.top + 5000)) {
       tech05.addClass('techActive');
       tech05.removeClass('techInactive');
 
       tech06.addClass('techInactive');
       tech06.removeClass('techActive');
 
-    } else if (window.scrollY >= (divOffset.top + 2500) && window.scrollY <= (divOffset.top + 3000)) {
+    } else if (window.scrollY >= (divOffset.top + 5000) && window.scrollY <= (divOffset.top + 6000)) {
       tech06.addClass('techActive');
       tech06.removeClass('techInactive');
 
       tech07.addClass('techInactive');
       tech07.removeClass('techActive');
 
-    } else if (window.scrollY >= (divOffset.top + 3000) && window.scrollY <= (divOffset.top + 3500)) {
+    } else if (window.scrollY >= (divOffset.top + 6000) && window.scrollY <= (divOffset.top + 7000)) {
       techTotal.each(function(i) {
         techTotal.eq(i).removeClass('d-none');
         techTotal.eq(i).addClass('techFixed');
@@ -95,7 +95,7 @@ document.addEventListener("scroll", function(e) {
       tech07.addClass('techActive');
       tech07.removeClass('techInactive');
 
-    } else if(window.scrollY >= (divOffset.top + 3500)){
+    } else if(window.scrollY >= (divOffset.top + 7000)){
       techTotal.each(function(i) {
         techTotal.eq(i).removeClass('techFixed');
         if(i>=1){
