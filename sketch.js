@@ -45,6 +45,7 @@ document.addEventListener("scroll", function(e) {
 
       techTotal.each(function(i) {
         techTotal.eq(i).addClass('techFixed');
+        techTotal.eq(i).removeClass('d-none');
       });
 
       tech02.addClass('techInactive');
@@ -87,6 +88,7 @@ document.addEventListener("scroll", function(e) {
 
     } else if (window.scrollY >= (divOffset.top + 3000) && window.scrollY <= (divOffset.top + 3500)) {
       techTotal.each(function(i) {
+        techTotal.eq(i).removeClass('d-none');
         techTotal.eq(i).addClass('techFixed');
       });
 
@@ -98,6 +100,7 @@ document.addEventListener("scroll", function(e) {
         techTotal.eq(i).removeClass('techFixed');
         if(i>=1){
           techTotal.eq(i).addClass('techInactive');
+          techTotal.eq(i).addClass('d-none');
           techTotal.eq(i).removeClass('techActive');
         }
       });
@@ -107,6 +110,9 @@ document.addEventListener("scroll", function(e) {
 
     }  else if (window.scrollY <= (divOffset.top - 100)) {
       techTotal.each(function(i) {
+        if(i>=1){
+          techTotal.eq(i).addClass('d-none');
+        }
         techTotal.eq(i).removeClass('techFixed');
       });
     }

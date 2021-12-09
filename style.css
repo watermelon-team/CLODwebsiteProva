@@ -24,6 +24,29 @@
   font-size: 1.5vw;
 }
 
+.rowMenu{
+  position: fixed;
+  width: 101vw;
+  padding: 20px 40px;
+  z-index:10;
+}
+
+.menuText{
+  color:white;
+  margin-bottom:30px;
+  cursor:pointer;
+  transition: 0.5s;
+}
+
+.menuText:hover{
+  color: var(--lightblue);
+  transition: 0.5s;
+}
+
+.btn:focus{
+  box-shadow: 0 0 0 0 rgb(13 110 253 / 0%)!important;
+}
+
 .accordion-button:focus{
   box-shadow: 0 0 0 0 rgb(13 110 253 / 0%)!important;
 }

@@ -19,10 +19,56 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/b42b0044fd.js"></script>
 
 </head>
 
 <body class="readex bg-darkblue text-white">
+
+  <!-- MENU -->
+  <div class="row rowMenu">
+    <div class="col">
+    </div>
+    <div class="col justify-content-center d-flex">
+      <img src="assets/logo-lightBlue.png" style="height: 50px;">
+    </div>
+    <div class="col justify-content-end d-flex">
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#menuModal"style="z-index:2!important">
+        <img src="assets/menu.png" style="width:30px">
+    </button>
+    </div>
+  </div>
+
+<div class="modal fade" id="menuModal"tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-fullscreen bg-blue" >
+  <div class="modal-content bg-blue">
+    <div class="modal-body">
+      <div class="row" style="margin-top: 10vh;margin-left: 10vw; margin-right: 10vw;">
+        <div class="col-6">
+          <img src="assets/logo-lightBlue.png" style="height: 80px;">
+        </div>
+        <div class="col-6 d-flex justify-content-end">
+          <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><img src="assets/esc.png" style="width:30px"></button>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 150px; margin-left: 10vw; margin-right: 10vw;">
+        <div class="col-12 col-xl-6">
+          <div class="fs-1c menuText">Home</div>
+          <div class="fs-1c menuText">Concept poster</div>
+          <div class="fs-1c menuText">MVP</div>
+        </div>
+        <div class="col-12 col-xl-6">
+          <div class="fs-1c menuText">VIVA presentation</div>
+          <div class="fs-1c menuText">Demo session</div>
+          <div class="fs-1c menuText">Meet the team</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  ...
+</div>
+</div>
+
 
   <div class="row">
     <div class="col">
@@ -157,15 +203,15 @@
 
 
   <!-- IMG -->
-  <div class="row" style="min-height:calc(100vh + 4000px); z-index:-1;" id="rowTech">
+  <div class="row" style="min-height:calc(100vh + 3500px); z-index:-1;" id="rowTech">
     <div class="col">
       <div class="row d-flex justify-content-center screenDimension align-items-center bg-darkblue techContain screenDimension" id="tech01">
         <div class="col d-flex justify-content-center">
-          <img src="assets/tech/01.png" class="imgTech" style="margin-top:-50px!important">
+          <img src="assets/tech/01.png" class="imgTech" style="margin-top:-0px!important">
         </div>
       </div>
 
-      <div class="row d-flex justify-content-center screenDimension align-items-center bg-darkblue techContain  techInactive screenDimension" id="tech02">
+      <div class="row d-flex justify-content-center screenDimension align-items-center bg-darkblue techContain d-none techInactive screenDimension" id="tech02">
         <div class="col d-flex justify-content-center">
           <img src="assets/tech/02.png" class="imgTech">
           <div class="techText">
@@ -178,7 +224,7 @@
               </div>
               <div class="col-10">
                 <div class="fs-6c">SENSORS</p>
-                  <div class="fs-6c fw-200"><small>CLOD uses a bar code reader to scan the food’s bar code and keep track of expiring dates. <small></p>
+                  <div class="fs-6c fw-200"><small>CLOD uses a bar code reader to scan the food’s bar code and keep track of expiring dates. </small></p>
                   </div>
 
                 </div>
@@ -188,7 +234,7 @@
         </div>
       </div>
 
-      <div class="row d-flex justify-content-center screenDimension align-items-center bg-darkblue techContain  techInactive screenDimension" id="tech03">
+      <div class="row d-flex justify-content-center screenDimension align-items-center bg-darkblue techContain d-none  techInactive screenDimension" id="tech03">
         <div class="col d-flex justify-content-center">
           <img src="assets/tech/01.png" class="imgTech">
           <div class="techText">
@@ -201,7 +247,7 @@
               </div>
               <div class="col-10">
                 <div class="fs-6c">SENSORS</p>
-                  <div class="fs-6c fw-200"><small>In the module you can find temperature and humidity sensors to always grant the best environment for the food.  <small></p>
+                  <div class="fs-6c fw-200"><small>In the module you can find temperature and humidity sensors to always grant the best environment for the food.  </small></p>
                   </div>
 
                 </div>
@@ -211,7 +257,7 @@
         </div>
       </div>
 
-      <div class="row d-flex justify-content-center screenDimension align-items-center bg-darkblue techContain  techInactive screenDimension" id="tech04">
+      <div class="row d-flex justify-content-center screenDimension align-items-center bg-darkblue techContain  d-none techInactive screenDimension" id="tech04">
         <div class="col d-flex justify-content-center">
           <img src="assets/tech/02.png" class="imgTech">
           <div class="techText">
@@ -224,7 +270,7 @@
               </div>
               <div class="col-10">
                 <div class="fs-6c">SENSORS</p>
-                  <div class="fs-6c fw-200"><small>Proximity sensors are used to make sure the door is closed so that there is no temperature dispersion  <small></p>
+                  <div class="fs-6c fw-200"><small>Proximity sensors are used to make sure the door is closed so that there is no temperature dispersion  </small></p>
                   </div>
 
                 </div>
@@ -234,7 +280,7 @@
         </div>
       </div>
 
-      <div class="row d-flex justify-content-center screenDimension align-items-center bg-darkblue techContain  techInactive screenDimension" id="tech05">
+      <div class="row d-flex justify-content-center screenDimension align-items-center bg-darkblue techContain  d-none techInactive screenDimension" id="tech05">
         <div class="col d-flex justify-content-center">
           <img src="assets/tech/01.png" class="imgTech">
           <div class="techText">
@@ -247,7 +293,7 @@
               </div>
               <div class="col-10">
                 <div class="fs-6c">SENSORS</p>
-                  <div class="fs-6c fw-200"><small>Weight sensors are used to keep track of the food inside the module <small></p>
+                  <div class="fs-6c fw-200"><small>Weight sensors are used to keep track of the food inside the module </small></p>
                   </div>
 
                 </div>
@@ -257,7 +303,7 @@
         </div>
       </div>
 
-      <div class="row d-flex justify-content-center screenDimension align-items-center bg-darkblue techContain  techInactive screenDimension" id="tech06">
+      <div class="row d-flex justify-content-center screenDimension align-items-center bg-darkblue techContain  d-none techInactive screenDimension" id="tech06">
         <div class="col d-flex justify-content-center">
           <img src="assets/tech/02.png" class="imgTech">
           <div class="techText">
@@ -270,7 +316,7 @@
             </div>
             <div class="col-10">
               <div class="fs-6c">CONNECTION</p>
-                <div class="fs-6c fw-200"><small>The three components of CLOD (module, barcode reader, tablet) communicate through the zigbee connection.  <small></p>
+                <div class="fs-6c fw-200"><small>The three components of CLOD (module, barcode reader, tablet) communicate through the zigbee connection.  </small></p>
                 </div>
 
               </div>
@@ -280,7 +326,7 @@
       </div>
       </div>
 
-      <div class="row d-flex justify-content-center screenDimension align-items-center bg-darkblue techContain  techInactive screenDimension" id="tech07">
+      <div class="row d-flex justify-content-center screenDimension align-items-center bg-darkblue techContain  d-none techInactive screenDimension" id="tech07">
         <div class="col d-flex justify-content-center">
           <img src="assets/tech/01.png" class="imgTech">
           <div class="techText">
@@ -293,7 +339,7 @@
             </div>
             <div class="col-10">
               <div class="fs-6c">CONNECTION</p>
-                <div class="fs-6c fw-200"><small>The information stored locally is also connected to some databases in the cloud connected through wifi  <small></p>
+                <div class="fs-6c fw-200"><small>The information stored locally is also connected to some databases in the cloud connected through wifi  </small></p>
                 </div>
 
               </div>
