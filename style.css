@@ -43,6 +43,14 @@
   transition: 0.5s;
 }
 
+.menuIcon{
+  width: 30px;
+}
+
+.logoMenu{
+  height: 50px;
+}
+
 .btn:focus{
   box-shadow: 0 0 0 0 rgb(13 110 253 / 0%)!important;
 }
@@ -198,6 +206,14 @@
     margin-left: -1px;
   }
 
+  .colSquaresLeft{
+    justify-content: flex-end;
+  }
+
+  .colSquaresright{
+    justify-content:flex-start;
+  }
+
 
 
 
@@ -221,8 +237,8 @@
   }
 
   .square{
-    width: 100%!important;
-    height:100vw!important;
+    width: 90%!important;
+    height:90vw!important;
     }
 
     .accordationTech{
@@ -247,6 +263,32 @@
       right:-25%;
       transform: translate(-50%, -50%);
     }
+
+    .menuIcon{
+      width: 70px;
+    }
+
+    .logoMenu{
+      height: 100px;
+    }
+
+    .rowMenu{
+      padding: 30px 30px;
+    }
+
+    .squares{
+      margin-top: 150px;
+    }
+
+    .colSquaresLeft{
+      justify-content: center;
+    }
+
+    .colSquaresright{
+      justify-content:center;
+    }
+
+
 
 
 
