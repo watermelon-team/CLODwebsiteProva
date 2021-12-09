@@ -220,6 +220,18 @@
     border: 10px solid white;
   }
 
+  .squareTeam{
+    width:200px;
+    height:200px;
+    border:5px solid var(--lightblue);
+  }
+
+
+  .rowTeam{
+    width: 1050px!important;
+    margin:auto;
+  }
+
 
 
 
@@ -243,7 +255,7 @@
   }
 
   .screenDimension{
-    min-height: 80vh;
+    min-height: 60vh;
   }
 
   .videoStyle{
