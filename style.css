@@ -1,0 +1,230 @@
+:root{
+  --dark-blue: #03111F;
+  --gray: #E6EDF1;
+  --lightblue: #B6D9EF;
+  --blue: #5B79B1;
+  --red: #D93148;
+  --green: #7EF997;
+}
+
+.fw-200{
+  font-weight: 200;
+}
+
+.fs-1c{
+  font-size: 4vw;
+  line-height: 1.2em;
+}
+
+.fs-2c{
+  font-size:2.5vw;
+}
+
+.fs-6c{
+  font-size: 1.5vw;
+}
+
+.accordion-button:focus{
+  box-shadow: 0 0 0 0 rgb(13 110 253 / 0%)!important;
+}
+
+.accordion-button:not(.collapsed)::after{
+  background-image: url("assets/arrowDown.png")!important;
+}
+
+.accordion-button::after {
+  background-image: url("assets/arrowDown.png")!important;
+  width: 30px!important;
+  height: 20px!important;
+  background-size: 30px!important;
+}
+
+
+.readex{
+  font-family: 'Readex Pro', sans-serif;
+}
+
+.screenDimension{
+  width:100vw;
+  min-height: 100vh;
+}
+
+.bg-darkblue{
+  background-color: var(--dark-blue)!important;
+}
+
+.bg-gray{
+  background-color: var(--gray)!important;
+}
+
+.bg-lightblue{
+  background-color: var(--lightblue)!important;
+}
+
+.bg-blue{
+  background-color: var(--blue)!important;
+}
+
+.rigaQuadrati{
+  max-width: 95%;
+}
+
+.square{
+  width: 40vw!important;
+  height:40vw!important;
+  border: 10px solid var(--lightblue);
+  padding: 20px 30px;
+  }
+
+  .logoHover{
+    position: absolute;
+    width: 100vw;
+    height: 700px;
+    background-color: rgba(3, 17, 31, 0.8);
+    /* border: 1px solid white; */
+    transform: translate(0%, -12%);
+    opacity: 0%;
+    transition: 1s;
+  }
+
+  .logoHover:hover{
+    opacity: 100%;
+    transition: 1s;
+  }
+
+  .accordationTech{
+    font-size: 2.5vw;
+    color: white!important;
+  }
+
+  .modularSystemBg{
+    background-image: url("assets/modularSystemImg.png");
+    background-size: cover;
+    transition: 0.5s;
+  }
+
+  .trackerBg{
+    background-image: url("assets/trackerImg.png");
+    background-size: cover;
+    transition: 0.5s;
+  }
+
+
+  .guideBg{
+    background-image: url("assets/guideImg.png");
+    background-size: cover;
+    transition: 0.5s;
+  }
+
+  .imgTech{
+    height: 90vh;
+  }
+
+  .techFixed{
+    position:fixed;
+    transform: translate(0%, -50%);
+    top: 50%;
+
+  }
+
+  .techInactive{
+    display:none;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .techActive{
+    display:flex;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  .techText{
+    position: absolute!important;
+    width:35vw!important;
+    top: 80%;
+    min-height: 200px;
+    right:20px;
+    transform: translate(0, -50%);
+  }
+
+
+  .line{
+    height:100%;
+    width: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    height: 200px;
+  }
+
+  .lineActiveSensors{
+    height:50px;
+    width: 5px;
+    background-color: white;
+    border-radius: 50px;
+    opacity:1;
+    margin-left: -1px;
+  }
+
+  .lineActiveConnection{
+    height:100px;
+    width: 5px;
+    background-color: white;
+    border-radius: 50px;
+    opacity:1;
+    margin-left: -1px;
+  }
+
+
+
+
+@media (max-width: 1200px) {
+
+  .fs-1c{
+    font-size: 7vw;
+    line-height: 1.2em;
+  }
+
+  .fs-6c{
+    font-size: 3.5vw;
+  }
+
+  .rigaQuadrati{
+    max-width: 75%;
+  }
+
+  .logoHover{
+    opacity:1;
+  }
+
+  .square{
+    width: 100%!important;
+    height:100vw!important;
+    }
+
+    .accordationTech{
+      font-size: 5vw;
+      color: white!important;
+    }
+
+    .accordion-button::after {
+      width: 20px!important;
+      height: 10px!important;
+      background-size: 20px!important;
+    }
+
+    .imgTech{
+      height: 50vh!important;
+    }
+
+    .techText{
+      position: absolute;
+      width:70vw!important;
+      bottom: 20px;
+      right:-25%;
+      transform: translate(-50%, -50%);
+    }
+
+
+
+}

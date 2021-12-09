@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <!-- <script src="p5.min.js"></script>
+    <script src="p5.sound.min.js"></script> -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="readex bg-darkblue text-white">
+
+  <div class="row">
+    <div class="col">
+      <iframe src="https://www.youtube.com/embed/20GIePMimnE?controls=0&autoplay=1" class="screenDimension"title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+
+  <!-- SQUARE -->
+
+  <div class="row d-flex justify-content-center screenDimension align-items-center">
+    <div class="col">
+      <div class="row mx-4">
+        <div class="col-12 col-xl-6 d-flex justify-content-end p-0">
+          <div class="square">
+            <div class="row" style="height:100%">
+              <div class="flex-column d-flex" style="">
+                <div class="row mb-auto">
+                  <div class="col-12">
+                    <p class="fs-1c">Elderly <br>and food...
+                    <p>
+                  </div>
+                </div>
+                <div class="row align-self-end">
+                  <p class="fs-6c fw-200 align-self-end">Seniors tend to lose balance in their diet by consuming unhealthy meals, outside and inside the home, or even skipping them.
+                    This leads to an increased risk and propensity for the onset of new diseases. The physiological, psychological and social changes during aging affect elderly's dietary choices. Many older adults have inadequate energy and protein
+                    intake.
+                  <p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-6 d-flex p-0">
+          <div class="square">
+            <div class="row" style="height:100%">
+              <div class="flex-column d-flex" style="">
+                <div class="row mb-auto">
+                  <div class="col-12">
+                    <p class="fs-1c">How <br>might we...
+                    <p>
+                  </div>
+                </div>
+                <div class="row align-self-end">
+                  <p class="fs-6c fw-200 align-self-end">How might we encourage healthy eating for elderly people living alone with fair or poor physical or mental health, in order to achieve better health and prevent the onset of new diseases?
+                  <p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- IMG -->
+  <div class="row d-flex justify-content-center screenDimension align-items-center">
+    <div class="col d-flex justify-content-center">
+      <img src="assets/CLODFrontal.png">
+      <div class="logoHover d-flex justify-content-center align-items-center">
+        <img src="assets/logo-lightBlue.png" style="width: 300px; height: 120px;">
+      </div>
+    </div>
+  </div>
+
+  <!-- SQUARE TECH -->
+
+  <div class="row d-flex justify-content-center screenDimension align-items-center">
+    <div class="col">
+      <div class="row mx-4">
+        <div class="col-12 col-xl-6 d-flex justify-content-end p-0">
+          <div class="square modularSystemBg" id="squareTech">
+            <div class="row" style="height:100%">
+              <div class="flex-column d-flex" style="">
+                <p class="fs-1c">About CLOD
+                <p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-6 d-flex p-0">
+          <div class="square">
+            <div class="accordion accordion-flush bg-transparent" id="accordionExample">
+              <div class="accordion-item bg-transparent">
+                <h2 class="accordion-header bg-transparent" id="headingOne">
+                  <button class="accordion-button text-white accordationTech bg-transparent" onclick="accordationTech(this)" id="modularSystemBg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    A MODULAR SYSTEM
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse  bg-transparent collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body fw-200 fs-6c">
+                    CLOD is a modular system with adjustable temperatures, which helps elderly to manage food, reduce waste and improve their nutrition.
+                  </div>
+                </div>
+              </div>
+              <hr class="bg-white" style="height:1px; opacity:1" />
+              <div class="accordion-item  bg-transparent">
+                <h2 class="accordion-header  bg-transparent" id="headingTwo">
+                  <button class="accordion-button collapsed accordationTech bg-transparent" onclick="accordationTech(this)" id="trackerBg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    A TRACKER
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse  bg-transparent collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body  bg-transparent  fw-200 fs-6c">
+                    The goal is to help users keep track of expiring dates while motivating them to cook by suggesting recipes everyday.
+                  </div>
+                </div>
+              </div>
+              <hr class="bg-white" style="height:1px; opacity:1" />
+              <div class="accordion-item  bg-transparent">
+                <h2 class="accordion-header  bg-transparent" id="headingThree">
+                  <button class="accordion-button collapsed accordationTech bg-transparent" onclick="accordationTech(this)" id="guideBg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">
+                    A GUIDE
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse  bg-transparent" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body  fw-200 fs-6c">
+                    A tablet will guide the user by giving them an overview of the food that they have at home, as well as suggesting the best temperature to store the food.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- IMG -->
+  <div class="row" style="min-height:calc(100vh + 4000px); z-index:-1;" id="rowTech">
+    <div class="col">
+      <div class="row d-flex justify-content-center screenDimension align-items-center bg-darkblue techContain screenDimension" id="tech01">
+        <div class="col d-flex justify-content-center">
+          <img src="assets/tech/01.png" class="imgTech" style="margin-top:-50px!important">
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-center screenDimension align-items-center bg-darkblue techContain  techInactive screenDimension" id="tech02">
+        <div class="col d-flex justify-content-center">
+          <img src="assets/tech/02.png" class="imgTech">
+          <div class="techText">
+            <div class="row rowTechText" >
+              <div class="col-1">
+                <div class="line">
+                  <div class="lineActiveSensors">
+                  </div>
+                </div>
+              </div>
+              <div class="col-10">
+                <div class="fs-6c">SENSORS</p>
+                  <div class="fs-6c fw-200"><small>CLOD uses a bar code reader to scan the food’s bar code and keep track of expiring dates. <small></p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-center screenDimension align-items-center bg-darkblue techContain  techInactive screenDimension" id="tech03">
+        <div class="col d-flex justify-content-center">
+          <img src="assets/tech/01.png" class="imgTech">
+          <div class="techText">
+            <div class="row rowTechText">
+              <div class="col-1">
+                <div class="line" style="padding-top:50px!important">
+                  <div class="lineActiveSensors" >
+                  </div>
+                </div>
+              </div>
+              <div class="col-10">
+                <div class="fs-6c">SENSORS</p>
+                  <div class="fs-6c fw-200"><small>In the module you can find temperature and humidity sensors to always grant the best environment for the food.  <small></p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-center screenDimension align-items-center bg-darkblue techContain  techInactive screenDimension" id="tech04">
+        <div class="col d-flex justify-content-center">
+          <img src="assets/tech/02.png" class="imgTech">
+          <div class="techText">
+            <div class="row rowTechText">
+              <div class="col-1">
+                <div class="line" style="padding-top:100px!important">
+                  <div class="lineActiveSensors" >
+                  </div>
+                </div>
+              </div>
+              <div class="col-10">
+                <div class="fs-6c">SENSORS</p>
+                  <div class="fs-6c fw-200"><small>Proximity sensors are used to make sure the door is closed so that there is no temperature dispersion  <small></p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-center screenDimension align-items-center bg-darkblue techContain  techInactive screenDimension" id="tech05">
+        <div class="col d-flex justify-content-center">
+          <img src="assets/tech/01.png" class="imgTech">
+          <div class="techText">
+            <div class="row rowTechText">
+              <div class="col-1">
+                <div class="line" style="padding-top:150px!important">
+                  <div class="lineActiveSensors" >
+                  </div>
+                </div>
+              </div>
+              <div class="col-10">
+                <div class="fs-6c">SENSORS</p>
+                  <div class="fs-6c fw-200"><small>Weight sensors are used to keep track of the food inside the module <small></p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-center screenDimension align-items-center bg-darkblue techContain  techInactive screenDimension" id="tech06">
+        <div class="col d-flex justify-content-center">
+          <img src="assets/tech/02.png" class="imgTech">
+          <div class="techText">
+          <div class="row TechText">
+            <div class="col-1">
+              <div class="line" style="padding-top:0px!important">
+                <div class="lineActiveConnection" >
+                </div>
+              </div>
+            </div>
+            <div class="col-10">
+              <div class="fs-6c">CONNECTION</p>
+                <div class="fs-6c fw-200"><small>The three components of CLOD (module, barcode reader, tablet) communicate through the zigbee connection.  <small></p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="row d-flex justify-content-center screenDimension align-items-center bg-darkblue techContain  techInactive screenDimension" id="tech07">
+        <div class="col d-flex justify-content-center">
+          <img src="assets/tech/01.png" class="imgTech">
+          <div class="techText">
+          <div class="row rowTechText">
+            <div class="col-1">
+              <div class="line" style="padding-top:100px!important">
+                <div class="lineActiveConnection" >
+                </div>
+              </div>
+            </div>
+            <div class="col-10">
+              <div class="fs-6c">CONNECTION</p>
+                <div class="fs-6c fw-200"><small>The information stored locally is also connected to some databases in the cloud connected through wifi  <small></p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+<!-- FINALE VIDEO -->
+  <div class="row">
+    <div class="col">
+      <iframe src="https://www.youtube.com/embed/20GIePMimnE?controls=0&autoplay=1" class="screenDimension"title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+
+
+  <script src="sketch.js"></script>
+  <link rel="stylesheet" href="style.css">
+</body>
+
+</html>
