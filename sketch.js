@@ -121,3 +121,35 @@ document.addEventListener("scroll", function(e) {
   // }
 
 })
+
+var bpBtn = $(".pointer1");
+var bpImg = $('.bicpictureImg');
+var bpText = $('.bpText');
+
+function bigPictureChange(obj){
+
+  var bpActive = 0;
+
+  bpBtn.each(function(i) {
+    bpBtn.eq(i).removeClass('pointerActive');
+    if(obj.id == bpBtn[i].id){
+      bpBtn.eq(i).addClass('pointerActive');
+      bpActive = i+1;
+    }
+  })
+
+  bpImg.each(function(i) {
+    bpImg.eq(i).addClass('bigpictureInactive');
+    console.log(bpActive);
+    bpImg.eq(bpActive).removeClass('bigpictureInactive');
+  })
+
+  bpText.each(function(i) {
+    bpText.eq(i).addClass('d-none');
+    console.log(bpActive);
+    bpText.eq(bpActive).removeClass('d-none');
+  })
+
+
+
+}

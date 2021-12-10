@@ -11,6 +11,10 @@
   font-weight: 200;
 }
 
+body{
+  overflow-x:hidden;
+}
+
 .fs-1c{
   font-size: 4vw;
   line-height: 1.2em;
@@ -19,6 +23,11 @@
 .fs-2c{
   font-size:2.5vw;
 }
+
+.fs-3c{
+  font-size:1.7vw;
+}
+
 
 .fs-6c{
   font-size: 1.5vw;
@@ -232,6 +241,87 @@
     margin:auto;
   }
 
+  .bicpictureImg{
+    position: absolute;
+    width: 800px;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  .colBigpicture{
+    min-height: 700px;
+  }
+
+  .pointer{
+    background-color: rgba(182, 217, 239, 0.4);
+    /* padding: 10px; */
+    border-radius: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    cursor:pointer;
+  }
+
+  .pointer1:hover{
+    transform: translate(-50%, -50%)scale(160%);
+    transition: 0.5s;
+  }
+
+  .pointer1{
+    width:70px;
+    height:70px;
+    transform: translate(-50%, -50%)scale(130%);
+  }
+
+  .pointer2{
+    width:50px;
+    height:50px;
+    top: 50%;
+    left: 50%;
+  }
+
+  .pointer3{
+    width:20px;
+    height:20px;
+    top: 50%;
+    left: 50%;
+  }
+
+  .bigpictureInactive{
+    opacity:0.3!important;
+    transition: 0.5s;
+  }
+
+  .pointerActive{
+    background-color: rgba(126, 249, 151, 0.4)!important;
+    transition: 0.5s;
+  }
+
+  #pointerCalendar{
+    margin-top: 250px;
+    margin-left: 350px;
+  }
+
+  #pointerScanner{
+    margin-top: 400px;
+    margin-left: 320px;
+  }
+
+  #pointerCloud{
+    margin-top: 130px;
+    margin-left: 670px;
+  }
+
+  #pointerModules{
+    margin-top: 320px;
+    margin-left: 120px;
+  }
+
+  #pointerRouter{
+    margin-top: 500px;
+    margin-left:630px;
+  }
+
 
 
 
@@ -239,6 +329,11 @@
 
   .fs-1c{
     font-size: 7vw;
+    line-height: 1.2em;
+  }
+
+  .fs-3c{
+    font-size: 5vw;
     line-height: 1.2em;
   }
 
