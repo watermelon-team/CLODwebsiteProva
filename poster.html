@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <!-- <script src="p5.min.js"></script>
+    <script src="p5.sound.min.js"></script> -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/b42b0044fd.js"></script>
+
+</head>
+
+<body class="readex bg-darkblue text-white ps-3 ps-xl-0">
+
+  <!-- MENU -->
+  <div class="row rowMenu">
+    <div class="col">
+    </div>
+    <div class="col justify-content-center d-flex">
+      <img src="assets/logo-lightBlue.png" class="logoMenu">
+    </div>
+    <div class="col justify-content-end d-flex">
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#menuModal" style="z-index:2!important">
+        <img src="assets/menu.png" class="menuIcon">
+      </button>
+    </div>
+  </div>
+
+  <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen bg-blue">
+      <div class="modal-content bg-blue">
+        <div class="modal-body">
+          <div class="row" style="margin-top: 10vh;margin-left: 10vw; margin-right: 10vw;">
+            <div class="col-6">
+              <img src="assets/logo-lightBlue.png" style="height: 80px;">
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+              <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><img src="assets/esc.png" style="width:30px"></button>
+            </div>
+          </div>
+          <div class="row" style="margin-top: 150px; margin-left: 10vw; margin-right: 10vw;">
+            <div class="col-12 col-xl-6">
+              <div class="fs-1c mb-4"><a href="index.html" class="menuText">Home</a></div>
+              <div class="fs-1c mb-4"><a href="poster.html" class="menuText">Concept poster</a></div>
+              <div class="fs-1c mb-4"><a href="mvp.html" class="menuText">MVP</a></div>
+            </div>
+            <div class="col-12 col-xl-6">
+              <div class="fs-1c mb-4"><a href="presentation.html" class="menuText">VIVA presentation</a></div>
+              <div class="fs-1c mb-4"><a href="test.html" class="menuText">Demo test</a></div>
+              <div class="fs-1c mb-4"><a href="team.html" class="menuText">Meet the team</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      ...
+    </div>
+  </div>
+
+
+
+  <!-- SQUARE POSTER -->
+
+  <div class="row d-flex justify-content-center screenDimension squareMobile align-items-center">
+    <div class="col">
+      <div class="row mx-4">
+        <div class="col-12 col-xl-6 d-flex  colSquaresLeft p-0">
+          <div class="square problemBg" id="squarePoster">
+            <div class="row" style="height:100%">
+              <div class="flex-column d-flex" style="">
+                <p class="fs-1c">Concept poster
+                <p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-6 d-flex colSquaresright p-0">
+          <div class="square">
+            <div class="accordion accordion-flush bg-transparent" id="accordionExample">
+              <div class="accordion-item bg-transparent">
+                <h2 class="accordion-header bg-transparent" id="headingOne">
+                  <button class="accordion-button text-white accordationTech bg-transparent" onclick="accordationPoster(this)" id="problemBg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    What is the PROBLEM?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse  bg-transparent collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body fw-200 fs-6c pt-0">
+                    Food waste and food mismanagement.
+                  </div>
+                </div>
+              </div>
+              <hr class="bg-white" style="height:1px; opacity:1" />
+              <div class="accordion-item  bg-transparent">
+                <h2 class="accordion-header  bg-transparent" id="headingTwo">
+                  <button class="accordion-button collapsed accordationTech bg-transparent" onclick="accordationPoster(this)" id="userBg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    Who is the TARGET?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse  bg-transparent collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body  bg-transparent  pt-0 fw-200 fs-6c">
+                    Elderly who live alone.
+                  </div>
+                </div>
+              </div>
+              <hr class="bg-white" style="height:1px; opacity:1" />
+              <div class="accordion-item  bg-transparent">
+                <h2 class="accordion-header  bg-transparent" id="headingThree">
+                  <button class="accordion-button collapsed accordationTech bg-transparent" onclick="accordationPoster(this)" id="solutionBg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">
+                    What is our SOLUTION?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse  bg-transparent" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body  pt-0 fw-200 fs-6c">
+                    CLOD is an intelligent modular fridge. It shows in an intuitive way the expiration date, motivating elderly to cook by suggesting recipes every day.
+                  </div>
+                </div>
+              </div>
+              <hr class="bg-white" style="height:1px; opacity:1" />
+              <div class="accordion-item  bg-transparent">
+                <h2 class="accordion-header  bg-transparent" id="headingThree">
+                  <button class="accordion-button collapsed accordationTech bg-transparent" onclick="accordationPoster(this)" id="relevantBg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">
+                    Why is it RELEVANT?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse  bg-transparent" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body pt-0  fw-200 fs-6c">
+                    It helps manage food in asimple way.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLOGAN -->
+  <div class="row d-flex justify-content-center screenDimension align-items-center">
+    <div class="col d-flex justify-content-center">
+      <img src="assets/CLODFrontal.png">
+      <div class="d-flex justify-content-center align-items-center fs-1c text-white slogan text-center" class="slogan">
+        FORGET FORGETTING <br>ABOUT YOUR FOOD
+      </div>
+    </div>
+  </div>
+
+  <!-- STORYBOARD -->
+  <div class="row d-flex justify-content-center screenDimension squareMobile align-items-center">
+    <div class="col">
+      <div class="fs-2c text-center">STORYBOARD</div>
+      <div class="row mx-4 rowStoryboard">
+        <div class="col-6 col-lg-4 colStoryboard">
+          <img src="assets/storyboard/01.png" class="storyboardImg">
+          <div class="fs-6c fw-200 text-center mt-2">Grab your shopping</div>
+        </div>
+        <div class="col-6 col-lg-4 colStoryboard">
+          <img src="assets/storyboard/02.png" class="storyboardImg">
+          <div class="fs-6c fw-200 text-center mt-2">Scan the food</div>
+        </div>
+        <div class="col-6 col-lg-4 colStoryboard">
+          <img src="assets/storyboard/03.png" class="storyboardImg">
+          <div class="fs-6c fw-200 text-center mt-2">Follow the instructions</div>
+        </div>
+        <div class="col-6 col-lg-4 colStoryboard">
+          <img src="assets/storyboard/04.png" class="storyboardImg">
+          <div class="fs-6c fw-200 text-center mt-2">Insert the food in the right CLOD</div>
+        </div>
+        <div class="col-6 col-lg-4 colStoryboard">
+          <img src="assets/storyboard/05.png" class="storyboardImg">
+          <div class="fs-6c fw-200 text-center mt-2">Keep easily track of the expiring date of your food</div>
+        </div>
+        <div class="col-6 col-lg-4 colStoryboard">
+          <img src="assets/storyboard/06.png" class="storyboardImg">
+          <div class="fs-6c fw-200 text-center mt-2">Follow the recipes suggested</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="sketchPoster.js"></script>
+  <link rel="stylesheet" href="style.css">
+</body>
+
+</html>

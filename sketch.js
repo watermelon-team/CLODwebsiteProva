@@ -9,6 +9,8 @@ function accordationTech(obj) {
 }
 
 
+
+
 // scroll tech
 
 
@@ -123,8 +125,11 @@ document.addEventListener("scroll", function(e) {
 })
 
 var bpBtn = $(".pointer1");
+var bpBtn2 = $(".pointer2");
+var bpBtn3 = $(".pointer3");
 var bpImg = $('.bicpictureImg');
 var bpText = $('.bpText');
+var bpConnections = $('.Connections ');
 
 function bigPictureChange(obj){
 
@@ -138,16 +143,29 @@ function bigPictureChange(obj){
     }
   })
 
+  bpBtn2.each(function(i) {
+    bpBtn2.eq(i).removeClass('pointerActive');
+    bpBtn2.eq(bpActive-1).addClass('pointerActive');
+  })
+
+  bpBtn3.each(function(i) {
+    bpBtn3.eq(i).removeClass('pointerActive');
+    bpBtn3.eq(bpActive-1).addClass('pointerActive');
+  })
+
   bpImg.each(function(i) {
     bpImg.eq(i).addClass('bigpictureInactive');
-    console.log(bpActive);
     bpImg.eq(bpActive).removeClass('bigpictureInactive');
   })
 
   bpText.each(function(i) {
     bpText.eq(i).addClass('d-none');
-    console.log(bpActive);
     bpText.eq(bpActive).removeClass('d-none');
+  })
+
+  bpConnections.each(function(i) {
+    bpConnections.eq(i).addClass('connectionsInactive');
+    bpConnections.eq(bpActive-1).removeClass('connectionsInactive');
   })
 
 

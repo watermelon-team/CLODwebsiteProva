@@ -33,6 +33,10 @@ body{
   font-size: 1.5vw;
 }
 
+a{
+  text-decoration: none;
+}
+
 .rowMenu{
   position: fixed;
   width: 101vw;
@@ -133,7 +137,7 @@ body{
   }
 
   .accordationTech{
-    font-size: 2.5vw;
+    font-size: 2.3vw;
     color: white!important;
   }
 
@@ -248,6 +252,13 @@ body{
     transition: 0.5s;
   }
 
+  .Connections{
+    position: absolute;
+    width: 800px;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
   .colBigpicture{
     min-height: 700px;
   }
@@ -292,6 +303,11 @@ body{
     transition: 0.5s;
   }
 
+  .connectionsInactive{
+    opacity:0!important;
+    transition: 0.5s;
+  }
+
   .pointerActive{
     background-color: rgba(126, 249, 151, 0.4)!important;
     transition: 0.5s;
@@ -320,6 +336,52 @@ body{
   #pointerRouter{
     margin-top: 500px;
     margin-left:630px;
+  }
+
+  .userBg{
+    background-image: url("assets/posterUser.png")!important;
+    background-size: cover;
+    transition: 0.5s;
+  }
+
+  .problemBg{
+    background-image: url("assets/posterProblem.png");
+    background-size: cover;
+    transition: 0.5s;
+  }
+
+  .solutionBg{
+    background-image: url("assets/bigPicture.png");
+    background-size: cover;
+    transition: 0.5s;
+  }
+
+  .relevantBg{
+    background-image: url("assets/bigPicture.png");
+    background-size: cover;
+    transition: 0.5s;
+  }
+
+  .storyboardImg{
+    width:100%;
+    border: 10px solid var(--lightblue);
+  }
+
+  .colStoryboard{
+    padding: 20px 30px;
+  }
+
+  .rowStoryboard{
+    padding: 0px 150px;
+  }
+
+  .slogan{
+    position: absolute;
+    width: 100vw;
+    height: 700px;
+    background-color: rgba(3, 17, 31, 0.8);
+    /* border: 1px solid white; */
+    transform: translate(0%, -12%);
   }
 
 
@@ -408,6 +470,14 @@ body{
 
     .colSquaresright{
       justify-content:center;
+    }
+
+    .squareMobile{
+      padding: 200px 0px;
+    }
+
+    .rowStoryboard{
+      padding: 0px 20px;
     }
 
 
