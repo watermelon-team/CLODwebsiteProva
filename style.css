@@ -263,6 +263,18 @@ a{
     min-height: 700px;
   }
 
+  @keyframes pointerAnimation {
+    0%{
+      transform: translate(-50%, -50%)scale(130%);
+    }
+    50%{
+      transform: translate(-50%, -50%)scale(150%);
+    }
+    100%{
+      transform: translate(-50%, -50%)scale(130%);
+    }
+  }
+
   .pointer{
     background-color: rgba(182, 217, 239, 0.4);
     /* padding: 10px; */
@@ -274,7 +286,7 @@ a{
   }
 
   .pointer1:hover{
-    transform: translate(-50%, -50%)scale(160%);
+    background-color: rgba(126, 249, 151, 0.4)!important;
     transition: 0.5s;
   }
 
@@ -282,6 +294,10 @@ a{
     width:70px;
     height:70px;
     transform: translate(-50%, -50%)scale(130%);
+    animation-name: pointerAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
   }
 
   .pointer2{
@@ -338,6 +354,28 @@ a{
     margin-left:630px;
   }
 
+
+
+  #pointerCalendarmvp{
+    margin-top: 150px;
+    margin-left: 600px;
+  }
+
+  #pointerScannermvp{
+    margin-top: 650px;
+    margin-left: 120px;
+  }
+
+  #pointerCloudmvp{
+    margin-top: 520px;
+    margin-left: 650px;
+  }
+
+  #pointerModulesmvp{
+    margin-top: 220px;
+    margin-left: 270px;
+  }
+
   .userBg{
     background-image: url("assets/posterUser.png")!important;
     background-size: cover;
@@ -382,6 +420,15 @@ a{
     background-color: rgba(3, 17, 31, 0.8);
     /* border: 1px solid white; */
     transform: translate(0%, -12%);
+  }
+
+  .mvpInactive{
+    opacity:0!important;
+    transition: 0.5s;
+  }
+
+  .mvpBorder{
+    border: 10px solid var(--lightblue);
   }
 
 
@@ -479,6 +526,8 @@ a{
     .rowStoryboard{
       padding: 0px 20px;
     }
+
+
 
 
 

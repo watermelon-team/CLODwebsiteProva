@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <!-- <script src="p5.min.js"></script>
+    <script src="p5.sound.min.js"></script> -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/b42b0044fd.js"></script>
+
+</head>
+
+<body class="readex bg-darkblue text-white ps-3 ps-xl-0">
+
+  <!-- MENU -->
+  <div class="row rowMenu">
+    <div class="col">
+    </div>
+    <div class="col justify-content-center d-flex">
+      <img src="assets/logo-lightBlue.png" class="logoMenu">
+    </div>
+    <div class="col justify-content-end d-flex">
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#menuModal" style="z-index:2!important">
+        <img src="assets/menu.png" class="menuIcon">
+      </button>
+    </div>
+  </div>
+
+  <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen bg-blue">
+      <div class="modal-content bg-blue">
+        <div class="modal-body">
+          <div class="row" style="margin-top: 10vh;margin-left: 10vw; margin-right: 10vw;">
+            <div class="col-6">
+              <img src="assets/logo-lightBlue.png" style="height: 80px;">
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+              <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><img src="assets/esc.png" style="width:30px"></button>
+            </div>
+          </div>
+          <div class="row" style="margin-top: 150px; margin-left: 10vw; margin-right: 10vw;">
+            <div class="col-12 col-xl-6">
+              <div class="fs-1c mb-4"><a href="index.html" class="menuText">Home</a></div>
+              <div class="fs-1c mb-4"><a href="poster.html" class="menuText">Concept poster</a></div>
+              <div class="fs-1c mb-4"><a href="mvp.html" class="menuText">MVP</a></div>
+            </div>
+            <div class="col-12 col-xl-6">
+              <div class="fs-1c mb-4"><a href="presentation.html" class="menuText">VIVA presentation</a></div>
+              <div class="fs-1c mb-4"><a href="test.html" class="menuText">Demo test</a></div>
+              <div class="fs-1c mb-4"><a href="team.html" class="menuText">Meet the team</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- SPECIFICATION -->
+
+  <div class="row d-flex justify-content-center screenDimension align-items-center squares">
+    <div class="col">
+      <div class="row mx-4">
+        <div class="col-12 col-xl-6 d-flex colSquaresLeft p-0">
+          <div class="square">
+            <div class="row" style="height:100%">
+              <div class="flex-column d-flex" style="">
+                <div class="row mb-auto">
+                  <div class="col-12">
+                    <p class="fs-1c">Product system
+                    </p>
+                  </div>
+                </div>
+                <div class="row align-self-end">
+                  <p class="fs-6c fw-200 align-self-end">The network of interaction is comprehensive of three components. The experience starts from the setup of the calendar and the installation of the modules, then the user scans the product with the bar code reader and proceeds in storing them in the modules while checking the calendar.
+                    <p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-6 d-flex colSquaresright p-0">
+          <div class="square mvpBg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="row d-flex justify-content-center screenDimension align-items-center">
+    <div class="col-12 col-lg-8 d-flex justify-content-center">
+      <img src="assets/esploso.png" style="width:100%; margin-top: -50px;" >
+    </div>
+  </div>
+
+  <!-- BIG PICTURE-->
+  <div class="row d-flex justify-content-center screenDimension align-items-center px-5">
+    <div class="col">
+      <div class="row mx-4">
+        <div class="col-12 col-lg-5 d-flex align-items-center px-5 my-5">
+          <div class="bpText">
+            <div class="fs-1c">COMPOSITION</div>
+            <div class="fs-6c fw-200">Each module installed can be set at different temperatures, therefore having more modules is fundamental for a succesful system that can avoid food waste.
+One advantage of using a CLOD system is that it is completely customizable to fit everyone’s kitchen. If one module is empty, CLOD switches off to avoid energy consumption</div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-7  px-5 my-5">
+          <img src="assets/MVP/kitchen.png" style="width:100%" >
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ESPLOSO -->
+  <div class="row d-flex justify-content-center screenDimension align-items-center px-5">
+    <div class="col">
+      <div class="row mx-4">
+        <div class="col-12 col-lg-7  px-lg-5 px-0 my-5 colBigpicture">
+          <img src="assets/MVP/total.png" class="bicpictureImg mvpBorder" >
+          <img src="assets/MVP/calendar.png" class="bicpictureImg mvpBorder mvpInactive" >
+          <img src="assets/MVP/cloud.png" class="bicpictureImg mvpBorder mvpInactive">
+          <img src="assets/MVP/module.png" class="bicpictureImg mvpBorder mvpInactive" >
+          <img src="assets/MVP/scanner.png" class="bicpictureImg mvpBorder mvpInactive">
+
+          <div class="pointer pointer1" id="pointerCalendarmvp" onclick="mvpChange(this)">
+            <div class="pointer pointer2">
+              <div class="pointer pointer3">
+              </div>
+            </div>
+          </div>
+          <div class="pointer pointer1" id="pointerCloudmvp" onclick="mvpChange(this)">
+            <div class="pointer pointer2">
+              <div class="pointer pointer3">
+              </div>
+            </div>
+          </div>
+          <div class="pointer pointer1" id="pointerModulesmvp" onclick="mvpChange(this)">
+            <div class="pointer pointer2">
+              <div class="pointer pointer3">
+              </div>
+            </div>
+          </div>
+          <div class="pointer pointer1" id="pointerScannermvp" onclick="mvpChange(this)">
+            <div class="pointer pointer2">
+              <div class="pointer pointer3">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-5 d-flex align-items-center px-5 my-5">
+          <div class="bpText">
+            <div class="fs-1c">What's inside?</div>
+            <div class="fs-6c fw-200">Click on the blue points to discover more</div>
+          </div>
+
+          <div class="bpText d-none">
+            <div class="fs-1c mb-2">CLOD Calendar</div>
+            <div class="fs-6c fw-200 mb-4">The user interface is programmed in HTML/CSS/JavaScript and is displayed on a touch screen. </div>
+            <div class="fs-3c">COMPONENTS</div>
+            <ul class="fs-6c fw-200">
+                <li>Touchscreen display</li>
+            </ul>
+            </div>
+
+            <div class="bpText d-none">
+              <div class="fs-1c mb-2">Cloud</div>
+              <div class="fs-6c fw-200 mb-4">Thanks to a Raspberry we created a database with EAN codes, food properties and recipes.
+              Through the database, the system can recognize food and sends instructions to the module and the calendar.</div>
+              <div class="fs-3c">COMPONENTS</div>
+              <ul class="fs-6c fw-200">
+                  <li>Raspberry</li>
+                  <li>CSVdatabase</li>
+              </ul>
+              </div>
+
+          <div class="bpText d-none">
+            <div class="fs-1c mb-2">CLOD Module</div>
+            <div class="fs-6c fw-200 mb-4">Inside the module we can find an Arduino mkr wifi 1010 which controls the sound speakers, the led lights and the proximity sensors and communicates with the scanner and calendar through the wifi connection.</div>
+            <div class="fs-3c">COMPONENTS</div>
+            <ul class="fs-6c fw-200">
+                <li>Arduino mkr wifi 1010</li>
+                <li>Mp3 DF player</li>
+                <li>Sound speaker</li>
+                <li>Addressable led strip</li>
+                <li>Weight sensor</li>
+                <li>Proximity sensor</li>
+            </ul>
+            </div>
+
+
+            <div class="bpText d-none">
+              <div class="fs-1c mb-2">CLOD Scanner</div>
+              <div class="fs-6c fw-200 mb-4">Inside the scanner there is an Arduino mkr wifi 1010 that is connected to the barcode reader and communicates with the calendar and module through the wifi connection.</div>
+              <div class="fs-3c">COMPONENTS</div>
+              <ul class="fs-6c fw-200">
+                  <li>Arduino mkr wifi 1010</li>
+                  <li>GM65 barcode scanner</li>
+                  <li>Powerbank</li>
+              </ul>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STORYBOARD -->
+  <div class="row d-flex justify-content-center screenDimension squareMobile align-items-center" style="margin-top:100px">
+    <div class="col">
+      <div class="fs-2c text-center">HOW TO USE IT</div>
+      <div class="row mx-4 rowStoryboard">
+        <div class="col-12 col-lg-4 colStoryboard">
+          <img src="assets/storyboard/01.png" class="storyboardImg">
+          <div class="fs-6c fw-200 text-center mt-2">Grab your shopping</div>
+        </div>
+        <div class="col-12 col-lg-4 colStoryboard">
+          <img src="assets/storyboard/02.png" class="storyboardImg">
+          <div class="fs-6c fw-200 text-center mt-2">Scan the food</div>
+        </div>
+        <div class="col-12 col-lg-4 colStoryboard">
+          <img src="assets/storyboard/03.png" class="storyboardImg">
+          <div class="fs-6c fw-200 text-center mt-2">Follow the instructions</div>
+        </div>
+        <div class="col-12 col-lg-4 colStoryboard">
+          <img src="assets/storyboard/04.png" class="storyboardImg">
+          <div class="fs-6c fw-200 text-center mt-2">Insert the food in the right CLOD</div>
+        </div>
+        <div class="col-12 col-lg-4 colStoryboard">
+          <img src="assets/storyboard/05.png" class="storyboardImg">
+          <div class="fs-6c fw-200 text-center mt-2">Keep easily track of the expiring date of your food</div>
+        </div>
+        <div class="col-12 col-lg-4 colStoryboard">
+          <img src="assets/storyboard/06.png" class="storyboardImg">
+          <div class="fs-6c fw-200 text-center mt-2">Follow the recipes suggested</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="sketchPoster.js"></script>
+  <link rel="stylesheet" href="style.css">
+</body>
+
+</html>
