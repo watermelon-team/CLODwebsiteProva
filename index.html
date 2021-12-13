@@ -33,40 +33,41 @@
       <img src="assets/logo-lightBlue.png" class="logoMenu">
     </div>
     <div class="col justify-content-end d-flex">
-      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#menuModal"style="z-index:2!important">
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#menuModal" style="z-index:2!important">
         <img src="assets/menu.png" class="menuIcon">
-    </button>
+      </button>
     </div>
   </div>
 
-<div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-fullscreen bg-blue" >
-  <div class="modal-content bg-blue">
-    <div class="modal-body">
-      <div class="row" style="margin-top: 10vh;margin-left: 10vw; margin-right: 10vw;">
-        <div class="col-6">
-          <img src="assets/logo-lightBlue.png" style="height: 80px;">
-        </div>
-        <div class="col-6 d-flex justify-content-end">
-          <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><img src="assets/esc.png" style="width:30px"></button>
+  <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen bg-blue">
+      <div class="modal-content bg-blue">
+        <div class="modal-body">
+          <div class="row" style="margin-top: 10vh;margin-left: 10vw; margin-right: 10vw;">
+            <div class="col-6">
+              <img src="assets/logo-lightBlue.png" style="height: 80px;">
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+              <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><img src="assets/esc.png" style="width:30px"></button>
+            </div>
+          </div>
+          <div class="row" style="margin-top: 150px; margin-left: 10vw; margin-right: 10vw;">
+            <div class="col-12 col-xl-6">
+              <div class="fs-1c mb-4"><a href="index.html" class="menuText">Home</a></div>
+              <div class="fs-1c mb-4"><a href="poster.html" class="menuText">Concept poster</a></div>
+              <div class="fs-1c mb-4"><a href="mvp.html" class="menuText">MVP</a></div>
+            </div>
+            <div class="col-12 col-xl-6">
+              <div class="fs-1c mb-4"><a href="presentation.html" class="menuText">VIVA presentation</a></div>
+              <div class="fs-1c mb-4"><a href="test.html" class="menuText">Demo test</a></div>
+              <div class="fs-1c mb-4"><a href="team.html" class="menuText">Meet the team</a></div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row" style="margin-top: 150px; margin-left: 10vw; margin-right: 10vw;">
-        <div class="col-12 col-xl-6">
-          <div class="fs-1c mb-4"><a href="index.html" class="menuText">Home</a></div>
-          <div class="fs-1c mb-4" ><a href="poster.html"  class="menuText">Concept poster</a></div>
-          <div class="fs-1c mb-4" ><a href="mvp.html"  class="menuText">MVP</a></div>
-        </div>
-        <div class="col-12 col-xl-6">
-          <div class="fs-1c mb-4"><a href="presentation.html" class="menuText">VIVA presentation</a></div>
-          <div class="fs-1c mb-4" ><a href="test.html"  class="menuText">Demo test</a></div>
-          <div class="fs-1c mb-4" ><a href="team.html"  class="menuText">Meet the team</a></div>
-        </div>
-      </div>
+      ...
     </div>
   </div>
-  ...
-</div>
-</div>
 
 
   <!-- VIDEO -->
@@ -204,14 +205,14 @@
 
 
   <!-- IMG -->
-  <div class="row" style="min-height:calc(100vh + 7000px); z-index:-1;" id="rowTech">
+  <div class="row" style="min-height:calc(100vh + 6000px); z-index:-1;" id="rowTech">
     <div class="col">
 
       <div class="row d-flex justify-content-center screenDimension align-items-center bg-darkblue techContain screenDimension" id="tech01">
         <div class="col d-flex justify-content-center">
           <img src="assets/tech/01.png" class="imgTech">
-          <div class="techText">
-            <div class="row rowTechText" >
+          <div class="techText d-none" id="techText1">
+            <div class="row rowTechText">
               <div class="col-1">
                 <div class="line">
                   <div class="lineActiveSensors">
@@ -237,13 +238,13 @@
             <div class="row rowTechText">
               <div class="col-1">
                 <div class="line" style="padding-top:50px!important">
-                  <div class="lineActiveSensors" >
+                  <div class="lineActiveSensors">
                   </div>
                 </div>
               </div>
               <div class="col-10">
                 <div class="fs-6c">SENSORS</p>
-                  <div class="fs-6c fw-200"><small>In the module you can find temperature and humidity sensors to always grant the best environment for the food.  </small></p>
+                  <div class="fs-6c fw-200"><small>In the module you can find temperature and humidity sensors to always grant the best environment for the food. </small></p>
                   </div>
 
                 </div>
@@ -260,13 +261,13 @@
             <div class="row rowTechText">
               <div class="col-1">
                 <div class="line" style="padding-top:100px!important">
-                  <div class="lineActiveSensors" >
+                  <div class="lineActiveSensors">
                   </div>
                 </div>
               </div>
               <div class="col-10">
                 <div class="fs-6c">SENSORS</p>
-                  <div class="fs-6c fw-200"><small>Proximity sensors are used to make sure the door is closed so that there is no temperature dispersion  </small></p>
+                  <div class="fs-6c fw-200"><small>Proximity sensors are used to make sure the door is closed so that there is no temperature dispersion </small></p>
                   </div>
 
                 </div>
@@ -283,7 +284,7 @@
             <div class="row rowTechText">
               <div class="col-1">
                 <div class="line" style="padding-top:150px!important">
-                  <div class="lineActiveSensors" >
+                  <div class="lineActiveSensors">
                   </div>
                 </div>
               </div>
@@ -303,274 +304,278 @@
         <div class="col d-flex justify-content-center">
           <img src="assets/tech/05.png" class="imgTech">
           <div class="techText">
-          <div class="row TechText">
-            <div class="col-1">
-              <div class="line" style="padding-top:0px!important">
-                <div class="lineActiveConnection" >
+            <div class="row TechText">
+              <div class="col-1">
+                <div class="line" style="padding-top:0px!important">
+                  <div class="lineActiveConnection">
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-10">
-              <div class="fs-6c">CONNECTION</p>
-                <div class="fs-6c fw-200"><small>The three components of CLOD (module, barcode reader, tablet) communicate through the zigbee connection.  </small></p>
-                </div>
+              <div class="col-10">
+                <div class="fs-6c">CONNECTION</p>
+                  <div class="fs-6c fw-200"><small>The three components of CLOD (module, barcode reader, tablet) communicate through the zigbee connection. </small></p>
+                  </div>
 
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
 
       <div class="row d-flex justify-content-center screenDimension align-items-center bg-darkblue techContain  d-none techInactive screenDimension" id="tech06">
         <div class="col d-flex justify-content-center">
           <img src="assets/tech/06.png" class="imgTech">
           <div class="techText">
-          <div class="row rowTechText">
-            <div class="col-1">
-              <div class="line" style="padding-top:100px!important">
-                <div class="lineActiveConnection" >
+            <div class="row rowTechText">
+              <div class="col-1">
+                <div class="line" style="padding-top:100px!important">
+                  <div class="lineActiveConnection">
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-10">
-              <div class="fs-6c">CONNECTION</div>
-                <div class="fs-6c fw-200"><small>The information stored locally is also connected to some databases in the cloud connected through wifi  </small></p>
+              <div class="col-10">
+                <div class="fs-6c">CONNECTION</div>
+                <div class="fs-6c fw-200"><small>The information stored locally is also connected to some databases in the cloud connected through wifi </small></p>
                 </div>
 
               </div>
             </div>
           </div>
         </div>
-        </div>
       </div>
+
     </div>
+
+  </div>
   </div>
 
 
-<!-- BIG PICTURE-->
-<div class="row d-flex justify-content-center screenDimension align-items-center px-5">
-  <div class="col">
-    <div class="row mx-4">
-      <div class="col-12 col-lg-7  px-5 my-5 colBigpicture">
-        <img src="assets/bigpicture/kitchen.png" class="bicpictureImg" >
-        <img src="assets/bigpicture/calendar.png" class="bicpictureImg" >
-        <img src="assets/bigpicture/cloud.png" class="bicpictureImg">
-        <img src="assets/bigpicture/modules.png" class="bicpictureImg" >
-        <img src="assets/bigpicture/router.png" class="bicpictureImg">
-        <img src="assets/bigpicture/scanner.png" class="bicpictureImg">
+  <!-- BIG PICTURE-->
+  <div class="row d-flex justify-content-center screenDimension align-items-center px-5">
+    <div class="col">
+      <div class="row mx-4">
+        <div class="col-12 col-lg-7  px-5 my-5 colBigpicture">
+          <img src="assets/bigpicture/kitchen.png" class="bicpictureImg">
+          <img src="assets/bigpicture/calendar.png" class="bicpictureImg">
+          <img src="assets/bigpicture/cloud.png" class="bicpictureImg">
+          <img src="assets/bigpicture/modules.png" class="bicpictureImg">
+          <img src="assets/bigpicture/router.png" class="bicpictureImg">
+          <img src="assets/bigpicture/scanner.png" class="bicpictureImg">
 
-        <img src="assets/bigpicture/calndarConnections-01.png" class="Connections connectionsInactive" >
-        <img src="assets/bigpicture/cloudConnections-01.png" class="Connections connectionsInactive">
-        <img src="assets/bigpicture/moduleConnections-01.png" class="Connections connectionsInactive" >
-        <img src="assets/bigpicture/routerConnections-01.png" class="Connections connectionsInactive">
-        <img src="assets/bigpicture/scannerConnections-01.png" class="Connections connectionsInactive">
+          <img src="assets/bigpicture/calndarConnections-01.png" class="Connections connectionsInactive">
+          <img src="assets/bigpicture/cloudConnections-01.png" class="Connections connectionsInactive">
+          <img src="assets/bigpicture/moduleConnections-01.png" class="Connections connectionsInactive">
+          <img src="assets/bigpicture/routerConnections-01.png" class="Connections connectionsInactive">
+          <img src="assets/bigpicture/scannerConnections-01.png" class="Connections connectionsInactive">
 
-        <div class="pointer pointer1" id="pointerCalendar" onclick="bigPictureChange(this)">
-          <div class="pointer pointer2">
-            <div class="pointer pointer3">
+          <div class="pointer pointer1" id="pointerCalendar" onclick="bigPictureChange(this)">
+            <div class="pointer pointer2">
+              <div class="pointer pointer3">
+              </div>
+            </div>
+          </div>
+          <div class="pointer pointer1" id="pointerCloud" onclick="bigPictureChange(this)">
+            <div class="pointer pointer2">
+              <div class="pointer pointer3">
+              </div>
+            </div>
+          </div>
+          <div class="pointer pointer1" id="pointerModules" onclick="bigPictureChange(this)">
+            <div class="pointer pointer2">
+              <div class="pointer pointer3">
+              </div>
+            </div>
+          </div>
+          <div class="pointer pointer1" id="pointerRouter" onclick="bigPictureChange(this)">
+            <div class="pointer pointer2">
+              <div class="pointer pointer3">
+              </div>
+            </div>
+          </div>
+          <div class="pointer pointer1" id="pointerScanner" onclick="bigPictureChange(this)">
+            <div class="pointer pointer2">
+              <div class="pointer pointer3">
+              </div>
             </div>
           </div>
         </div>
-        <div class="pointer pointer1" id="pointerCloud" onclick="bigPictureChange(this)">
-          <div class="pointer pointer2">
-            <div class="pointer pointer3">
-            </div>
+        <div class="col-12 col-lg-5 d-flex align-items-center px-5 my-5">
+          <div class="bpText">
+            <div class="fs-1c">How it works?</div>
+            <div class="fs-6c fw-200">Click on the blue points to discover more</div>
           </div>
-        </div>
-        <div class="pointer pointer1" id="pointerModules" onclick="bigPictureChange(this)">
-          <div class="pointer pointer2">
-            <div class="pointer pointer3">
-            </div>
+          <div class="bpText d-none">
+            <div class="fs-1c  mb-2">CLOD Calendar</div>
+            <div class="fs-3c">COMPUTING PLATFORM</div>
+            <ul class="fs-6c fw-200">
+              <li>Concentrator</li>
+            </ul>
+            <div class="fs-3c">OUTPUT</div>
+            <ul class="fs-6c fw-200">
+              <li>Digital interface</li>
+            </ul>
           </div>
-        </div>
-        <div class="pointer pointer1" id="pointerRouter" onclick="bigPictureChange(this)">
-          <div class="pointer pointer2">
-            <div class="pointer pointer3">
-            </div>
-          </div>
-        </div>
-        <div class="pointer pointer1" id="pointerScanner" onclick="bigPictureChange(this)">
-          <div class="pointer pointer2">
-            <div class="pointer pointer3">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-5 d-flex align-items-center px-5 my-5">
-        <div class="bpText">
-          <div class="fs-1c">How it works?</div>
-          <div class="fs-6c fw-200">Click on the blue points to discover more</div>
-        </div>
-        <div class="bpText d-none">
-          <div class="fs-1c  mb-2">CLOD Calendar</div>
-          <div class="fs-3c">COMPUTING PLATFORM</div>
-          <ul class="fs-6c fw-200">
-            <li>Concentrator</li>
-          </ul>
-          <div class="fs-3c">OUTPUT</div>
-          <ul class="fs-6c fw-200">
-            <li>Digital interface</li>
-          </ul>
-        </div>
 
-        <div class="bpText d-none">
-          <div class="fs-1c mb-2">Cloud</div>
-          <div class="fs-3c">SOFTWARE</div>
-          <ul class="fs-6c fw-200">
-            <li>Temperature system</li>
-            <li>Storage control</li>
-          </ul>
-          <div class="fs-3c">DATABASE</div>
-          <ul class="fs-6c fw-200">
-            <li>Recipes</li>
-            <li>Products</li>
-            <li>Informations</li>
-          </ul>
-        </div>
+          <div class="bpText d-none">
+            <div class="fs-1c mb-2">Cloud</div>
+            <div class="fs-3c">SOFTWARE</div>
+            <ul class="fs-6c fw-200">
+              <li>Temperature system</li>
+              <li>Storage control</li>
+            </ul>
+            <div class="fs-3c">DATABASE</div>
+            <ul class="fs-6c fw-200">
+              <li>Recipes</li>
+              <li>Products</li>
+              <li>Informations</li>
+            </ul>
+          </div>
 
-        <div class="bpText d-none">
-          <div class="fs-1c mb-2">CLOD Modules</div>
-          <div class="fs-3c">INPUTS</div>
-          <ul class="fs-6c fw-200">
+          <div class="bpText d-none">
+            <div class="fs-1c mb-2">CLOD Modules</div>
+            <div class="fs-3c">INPUTS</div>
+            <ul class="fs-6c fw-200">
               <li>Temperature sensor</li>
               <li>Humidity sensor</li>
               <li>Weight sensor</li>
               <li>Proximity sensor</li>
-          </ul>
-          <div class="fs-3c">COMPUTING PLATFORM</div>
-          <ul class="fs-6c fw-200">
-            <li>Embedded chip</li>
-          </ul>
-          <div class="fs-3c">OUTPUTS</div>
-          <ul class="fs-6c fw-200">
-            <li>Led strip</li>
-            <li>Compressor</li>
-            <li>Speaker</li>
-          </ul>
-        </div>
+            </ul>
+            <div class="fs-3c">COMPUTING PLATFORM</div>
+            <ul class="fs-6c fw-200">
+              <li>Embedded chip</li>
+            </ul>
+            <div class="fs-3c">OUTPUTS</div>
+            <ul class="fs-6c fw-200">
+              <li>Led strip</li>
+              <li>Compressor</li>
+              <li>Speaker</li>
+            </ul>
+          </div>
 
 
 
-        <div class="bpText d-none">
-          <div class="fs-1c mb-2">Router</div>
-          <p class="fs-6c fw-200">
-            Connects the calendar with the Cloud with wi-fi.
-          </p>
-        </div>
+          <div class="bpText d-none">
+            <div class="fs-1c mb-2">Router</div>
+            <p class="fs-6c fw-200">
+              Connects the calendar with the Cloud with wi-fi.
+            </p>
+          </div>
 
-        <div class="bpText d-none">
-          <div class="fs-1c mb-2">CLOD Scanner</div>
-          <div class="fs-3c">INPUT</div>
-          <ul class="fs-6c fw-200">
-            <li>BARCODE SCANNER</li>
-          </ul>
+          <div class="bpText d-none">
+            <div class="fs-1c mb-2">CLOD Scanner</div>
+            <div class="fs-3c">INPUT</div>
+            <ul class="fs-6c fw-200">
+              <li>BARCODE SCANNER</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
 
 
 
-<!-- FINALE VIDEO -->
-<div class="row d-flex justify-content-center screenDimension align-items-center">
-  <div class="col d-flex justify-content-center">
-    <iframe src="https://player.vimeo.com/video/654868730?h=b7e3c360da" class="videoStyle" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  <!-- FINALE VIDEO -->
+  <div class="row d-flex justify-content-center screenDimension align-items-center">
+    <div class="col d-flex justify-content-center">
+      <iframe src="https://player.vimeo.com/video/654868730?h=b7e3c360da" class="videoStyle" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </div>
   </div>
-</div>
 
 
-<!-- SQUARE DISCLAIMER-->
+  <!-- SQUARE DISCLAIMER-->
 
-<div class="row d-flex justify-content-center screenDimension align-items-center squares">
-  <div class="col">
-    <div class="row mx-4">
-      <div class="col-12 col-xl-6 d-flex colSquaresLeft p-0">
-        <div class="square">
-          <div class="row" style="height:100%">
-            <div class="flex-column d-flex" style="">
-              <div class="row mb-auto">
-                <div class="col-12">
-                  <p class="fs-1c">Disclaimer
+  <div class="row d-flex justify-content-center screenDimension align-items-center squares">
+    <div class="col">
+      <div class="row mx-4">
+        <div class="col-12 col-xl-6 d-flex colSquaresLeft p-0">
+          <div class="square">
+            <div class="row" style="height:100%">
+              <div class="flex-column d-flex" style="">
+                <div class="row mb-auto">
+                  <div class="col-12">
+                    <p class="fs-1c">Disclaimer
+                    </p>
+                  </div>
+                </div>
+                <div class="row align-self-end">
+                  <p class="fs-6c fw-200 align-self-end">When dealing with a fragile audience who live alone, it’s fundamental to think about the different aspects of a very compromising issue which is food management.<br>
+                    The goal of this project has always been to accompany elderly in their lives, without restraining them: <strong>we believe in giving freedom</strong> to our users, therefore CLOD is a tool to assist them, and not to control them.
+                  <p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-6 d-flex colSquaresright p-0">
+          <div class="square">
+            <div class="row" style="height:100%">
+              <div class="flex-column d-flex" style="">
+                <div class="row mb-auto">
+                  <div class="col-12">
+                  </div>
+                </div>
+                <div class="row align-self-end">
+                  <p class="fs-6c fw-200 align-self-end">
+                    Having a healthy diet is clearly very important to prevent health issues, but CLOD doesn’t solely focus on the health of the body: presenting stimulous information such as recipes, and giving constant feedback about the food helps
+                    elderly feel in control, stimulated and powerful in managing their own lives.
+                    Therefore we can say that the direction of this project has always been towards cognitive incitation, resulting in a use of technology that doesn’t overtake or track the lives of elderly, but that allows them to have a true
+                    companion day to day.
                   </p>
                 </div>
               </div>
-              <div class="row align-self-end">
-                <p class="fs-6c fw-200 align-self-end">When dealing with a fragile audience who live alone, it’s fundamental to think about the different aspects of a very compromising issue which is food management.<br>
-                  The goal of this project has always been to accompany elderly in their lives, without restraining them: <strong>we believe in giving freedom</strong> to our users, therefore CLOD is a tool to assist them, and not to control them.
-                <p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-xl-6 d-flex colSquaresright p-0">
-        <div class="square">
-          <div class="row" style="height:100%">
-            <div class="flex-column d-flex" style="">
-              <div class="row mb-auto">
-                <div class="col-12">
-                </div>
-              </div>
-              <div class="row align-self-end">
-                <p class="fs-6c fw-200 align-self-end">
-                Having a healthy diet is clearly very important to prevent health issues, but CLOD doesn’t solely focus on the health of the body: presenting stimulous information such as recipes, and giving constant feedback about the food helps elderly feel in control, stimulated and powerful in managing their own lives.
-                Therefore we can say that the direction of this project has always been towards cognitive incitation, resulting in a use of technology that doesn’t overtake or track the lives of elderly, but that allows them to have a true companion day to day.
-              </p>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
 
-<!-- TEAM -->
-<div class="row d-flex justify-content-center screenDimension align-items-center squares">
-  <div class="col">
+  <!-- TEAM -->
+  <div class="row d-flex justify-content-center screenDimension align-items-center squares">
+    <div class="col">
       <div class="rowTeam">
         <div class="fs-1c text-center" style="margin-bottom: 80px">CLOD Team</div>
-    <div class="row mx-5 ">
-      <div class="col p-0">
-        <img src="assets/profileImg.png" style="width:100%" class="squareTeam">
-      </div>
-      <div class="col  p-0 squareTeamOff d-flex justify-content-center align-items-end">
-        <p class="fs-6c text-center mb-3">Micol<br>Montenesi</p>
-      </div>
-      <div class="col  p-0">
-        <img src="assets/profileImg.png" style="width:100%"  class="squareTeam">
-      </div>
-      <div class="col  p-0 squareTeamOff d-flex justify-content-center  align-items-end">
-        <p class="fs-6c text-center mb-3">Hilary<br>Palazzolo</p>
-      </div>
-      <div class="col  p-0">
-        <img src="assets/profileImg.png" style="width:100%"  class="squareTeam">
-      </div>
-    </div>
-    <div class="row mx-5"  style="margin-bottom: 80px">
-      <div class="col  p-0 squareTeamOff d-flex justify-content-center">
-        <p class="fs-6c text-center mt-3">Elisa<br>Manzoni</p>
-      </div>
-      <div class="col  p-0 ">
-        <img src="assets/profileImg.png" style="width:100%"  class="squareTeam">
-      </div>
-      <div class="col  p-0 squareTeamOff d-flex justify-content-center">
-        <p class="fs-6c text-center mt-3">Elio<br>Raineri</p>
-      </div>
-      <div class="col  p-0 ">
-        <img src="assets/profileImg.png" style="width:100%"  class="squareTeam">
-      </div>
-      <div class="col  p-0 squareTeamOff d-flex justify-content-center">
-        <p class="fs-6c text-center mt-3">Nicole<br>Bonacina</p>
+        <div class="row mx-5 ">
+          <div class="col p-0">
+            <img src="assets/profileImg.png" style="width:100%" class="squareTeam">
+          </div>
+          <div class="col  p-0 squareTeamOff d-flex justify-content-center align-items-end">
+            <p class="fs-6c text-center mb-3">Micol<br>Montenesi</p>
+          </div>
+          <div class="col  p-0">
+            <img src="assets/profileImg.png" style="width:100%" class="squareTeam">
+          </div>
+          <div class="col  p-0 squareTeamOff d-flex justify-content-center  align-items-end">
+            <p class="fs-6c text-center mb-3">Hilary<br>Palazzolo</p>
+          </div>
+          <div class="col  p-0">
+            <img src="assets/profileImg.png" style="width:100%" class="squareTeam">
+          </div>
+        </div>
+        <div class="row mx-5" style="margin-bottom: 80px">
+          <div class="col  p-0 squareTeamOff d-flex justify-content-center">
+            <p class="fs-6c text-center mt-3">Elisa<br>Manzoni</p>
+          </div>
+          <div class="col  p-0 ">
+            <img src="assets/profileImg.png" style="width:100%" class="squareTeam">
+          </div>
+          <div class="col  p-0 squareTeamOff d-flex justify-content-center">
+            <p class="fs-6c text-center mt-3">Elio<br>Raineri</p>
+          </div>
+          <div class="col  p-0 ">
+            <img src="assets/profileImg.png" style="width:100%" class="squareTeam">
+          </div>
+          <div class="col  p-0 squareTeamOff d-flex justify-content-center">
+            <p class="fs-6c text-center mt-3">Nicole<br>Bonacina</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  </div>
-</div>
 
 
   <script src="sketch.js"></script>

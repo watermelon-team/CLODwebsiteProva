@@ -34,7 +34,6 @@ document.addEventListener("scroll", function(e) {
     var tech04 = $('#tech04');
     var tech05 = $('#tech05');
     var tech06 = $('#tech06');
-    var tech07 = $('#tech07');
 
     var techTotal = $('.techContain');
 
@@ -49,6 +48,8 @@ document.addEventListener("scroll", function(e) {
         techTotal.eq(i).addClass('techFixed');
         techTotal.eq(i).removeClass('d-none');
       });
+
+      $('#techText1').removeClass('d-none');
 
       tech02.addClass('techInactive');
       tech02.removeClass('techActive');
@@ -82,22 +83,15 @@ document.addEventListener("scroll", function(e) {
       tech06.removeClass('techActive');
 
     } else if (window.scrollY >= (divOffset.top + 5000) && window.scrollY <= (divOffset.top + 6000)) {
-      tech06.addClass('techActive');
-      tech06.removeClass('techInactive');
-
-      tech07.addClass('techInactive');
-      tech07.removeClass('techActive');
-
-    } else if (window.scrollY >= (divOffset.top + 6000) && window.scrollY <= (divOffset.top + 7000)) {
       techTotal.each(function(i) {
         techTotal.eq(i).removeClass('d-none');
         techTotal.eq(i).addClass('techFixed');
       });
 
-      tech07.addClass('techActive');
-      tech07.removeClass('techInactive');
+      tech06.addClass('techActive');
+      tech06.removeClass('techInactive');
 
-    } else if(window.scrollY >= (divOffset.top + 7000)){
+    } else if(window.scrollY >= (divOffset.top + 6000)){
       techTotal.each(function(i) {
         techTotal.eq(i).removeClass('techFixed');
         if(i>=1){
@@ -117,6 +111,8 @@ document.addEventListener("scroll", function(e) {
         }
         techTotal.eq(i).removeClass('techFixed');
       });
+
+      $('#techText1').addClass('d-none');
     }
 
 
