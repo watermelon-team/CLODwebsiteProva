@@ -97,7 +97,7 @@
           </div>
         </div>
         <div class="col-12 col-xl-6 d-flex colSquaresright p-0">
-          <div class="square mvpBg">
+          <div class="square dimensionBg">
           </div>
         </div>
       </div>
@@ -106,21 +106,15 @@
 
 
 
-  <div class="row d-flex justify-content-center screenDimension align-items-center">
-    <div class="col-12 col-lg-8 d-flex justify-content-center">
-      <img src="assets/esploso.png" style="width:100%; margin-top: -50px;" >
-    </div>
-  </div>
-
-  <!-- BIG PICTURE-->
+  <!-- COMPOSITION-->
   <div class="row d-flex justify-content-center screenDimension align-items-center px-5">
     <div class="col">
       <div class="row mx-4">
         <div class="col-12 col-lg-5 d-flex align-items-center px-5 my-5">
-          <div class="bpText">
+          <div class="">
             <div class="fs-1c">COMPOSITION</div>
             <div class="fs-6c fw-200">Each module installed can be set at different temperatures, therefore having more modules is fundamental for a succesful system that can avoid food waste.
-One advantage of using a CLOD system is that it is completely customizable to fit everyone’s kitchen. If one module is empty, CLOD switches off to avoid energy consumption</div>
+              One advantage of using a CLOD system is that it is completely customizable to fit everyone’s kitchen. If one module is empty, CLOD switches off to avoid energy consumption</div>
           </div>
         </div>
         <div class="col-12 col-lg-7  px-5 my-5">
@@ -131,36 +125,49 @@ One advantage of using a CLOD system is that it is completely customizable to fi
     </div>
   </div>
 
-  <!-- ESPLOSO -->
+  <!-- BIG PICTURE-->
   <div class="row d-flex justify-content-center screenDimension align-items-center px-5">
     <div class="col">
       <div class="row mx-4">
-        <div class="col-12 col-lg-7  px-lg-5 px-0 my-5 colBigpicture">
-          <img src="assets/MVP/total.png" class="bicpictureImg mvpBorder" >
-          <img src="assets/MVP/calendar.png" class="bicpictureImg mvpBorder mvpInactive" >
-          <img src="assets/MVP/cloud.png" class="bicpictureImg mvpBorder mvpInactive">
-          <img src="assets/MVP/module.png" class="bicpictureImg mvpBorder mvpInactive" >
-          <img src="assets/MVP/scanner.png" class="bicpictureImg mvpBorder mvpInactive">
+        <div class="col-12 col-lg-7  px-5 my-5 colBigpicture">
+          <img src="assets/bigpicture/kitchen.png" class="bicpictureImg">
+          <img src="assets/bigpicture/calendar.png" class="bicpictureImg">
+          <img src="assets/bigpicture/cloud.png" class="bicpictureImg">
+          <img src="assets/bigpicture/modules.png" class="bicpictureImg">
+          <img src="assets/bigpicture/router.png" class="bicpictureImg">
+          <img src="assets/bigpicture/scanner.png" class="bicpictureImg">
 
-          <div class="pointer pointer1" id="pointerCalendarmvp" onclick="mvpChange(this)">
+          <img src="assets/bigpicture/calndarConnections-01.png" class="Connections connectionsInactive">
+          <img src="assets/bigpicture/cloudConnections-01.png" class="Connections connectionsInactive">
+          <img src="assets/bigpicture/moduleConnections-01.png" class="Connections connectionsInactive">
+          <img src="assets/bigpicture/routerConnections-01.png" class="Connections connectionsInactive">
+          <img src="assets/bigpicture/scannerConnections-01.png" class="Connections connectionsInactive">
+
+          <div class="pointer pointer1" id="pointerCalendar" onclick="bigPictureChange(this)">
             <div class="pointer pointer2">
               <div class="pointer pointer3">
               </div>
             </div>
           </div>
-          <div class="pointer pointer1" id="pointerCloudmvp" onclick="mvpChange(this)">
+          <div class="pointer pointer1" id="pointerCloud" onclick="bigPictureChange(this)">
             <div class="pointer pointer2">
               <div class="pointer pointer3">
               </div>
             </div>
           </div>
-          <div class="pointer pointer1" id="pointerModulesmvp" onclick="mvpChange(this)">
+          <div class="pointer pointer1" id="pointerModules" onclick="bigPictureChange(this)">
             <div class="pointer pointer2">
               <div class="pointer pointer3">
               </div>
             </div>
           </div>
-          <div class="pointer pointer1" id="pointerScannermvp" onclick="mvpChange(this)">
+          <div class="pointer pointer1" id="pointerRouter" onclick="bigPictureChange(this)">
+            <div class="pointer pointer2">
+              <div class="pointer pointer3">
+              </div>
+            </div>
+          </div>
+          <div class="pointer pointer1" id="pointerScanner" onclick="bigPictureChange(this)">
             <div class="pointer pointer2">
               <div class="pointer pointer3">
               </div>
@@ -169,11 +176,129 @@ One advantage of using a CLOD system is that it is completely customizable to fi
         </div>
         <div class="col-12 col-lg-5 d-flex align-items-center px-5 my-5">
           <div class="bpText">
+            <div class="fs-1c">How it works?</div>
+            <div class="fs-6c fw-200">Click on the blue points to discover more</div>
+          </div>
+          <div class="bpText d-none">
+            <div class="fs-1c  mb-2">CLOD Calendar</div>
+            <div class="fs-3c">COMPUTING PLATFORM</div>
+            <ul class="fs-6c fw-200">
+              <li>Concentrator</li>
+            </ul>
+            <div class="fs-3c">OUTPUT</div>
+            <ul class="fs-6c fw-200">
+              <li>Digital interface</li>
+            </ul>
+          </div>
+
+          <div class="bpText d-none">
+            <div class="fs-1c mb-2">Cloud</div>
+            <div class="fs-3c">SOFTWARE</div>
+            <ul class="fs-6c fw-200">
+              <li>Temperature system</li>
+              <li>Storage control</li>
+            </ul>
+            <div class="fs-3c">DATABASE</div>
+            <ul class="fs-6c fw-200">
+              <li>Recipes</li>
+              <li>Products</li>
+              <li>Informations</li>
+            </ul>
+          </div>
+
+          <div class="bpText d-none">
+            <div class="fs-1c mb-2">CLOD Modules</div>
+            <div class="fs-3c">INPUTS</div>
+            <ul class="fs-6c fw-200">
+              <li>Temperature sensor</li>
+              <li>Humidity sensor</li>
+              <li>Weight sensor</li>
+              <li>Proximity sensor</li>
+            </ul>
+            <div class="fs-3c">COMPUTING PLATFORM</div>
+            <ul class="fs-6c fw-200">
+              <li>Embedded chip</li>
+            </ul>
+            <div class="fs-3c">OUTPUTS</div>
+            <ul class="fs-6c fw-200">
+              <li>Led strip</li>
+              <li>Compressor</li>
+              <li>Speaker</li>
+            </ul>
+          </div>
+
+
+
+          <div class="bpText d-none">
+            <div class="fs-1c mb-2">Router</div>
+            <p class="fs-6c fw-200">
+              Connects the calendar with the Cloud with wi-fi.
+            </p>
+          </div>
+
+          <div class="bpText d-none">
+            <div class="fs-1c mb-2">CLOD Scanner</div>
+            <div class="fs-3c">INPUT</div>
+            <ul class="fs-6c fw-200">
+              <li>BARCODE SCANNER</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ESPLOSO-->
+  <div class="row d-flex justify-content-center screenDimension align-items-center">
+    <div class="col-12 col-lg-8 d-flex justify-content-center">
+      <img src="assets/esploso.png" style="width:100%; margin-top: -50px;" >
+    </div>
+  </div>
+
+
+  <!-- SMALL PICTURE -->
+  <div class="row d-flex justify-content-center screenDimension align-items-center px-5">
+    <div class="col">
+      <div class="row mx-4">
+        <div class="col-12 col-lg-7  px-lg-5 px-0 my-5 colBigpicture">
+          <img src="assets/MVP/total.png" class="bicpictureImgmvp mvpBorder" >
+          <img src="assets/MVP/calendar.png" class="bicpictureImgmvp mvpBorder mvpInactive" >
+          <img src="assets/MVP/cloud.png" class="bicpictureImgmvp mvpBorder mvpInactive">
+          <img src="assets/MVP/module.png" class="bicpictureImgmvp mvpBorder mvpInactive" >
+          <img src="assets/MVP/scanner.png" class="bicpictureImgmvp mvpBorder mvpInactive">
+
+          <div class="pointer pointer1mvp" id="pointerCalendarmvp" onclick="mvpChange(this)">
+            <div class="pointer pointer2mvp">
+              <div class="pointer pointer3mvp">
+              </div>
+            </div>
+          </div>
+          <div class="pointer pointer1mvp" id="pointerCloudmvp" onclick="mvpChange(this)">
+            <div class="pointer pointer2mvp">
+              <div class="pointer pointer3mvp">
+              </div>
+            </div>
+          </div>
+          <div class="pointer pointer1mvp" id="pointerModulesmvp" onclick="mvpChange(this)">
+            <div class="pointer pointer2mvp">
+              <div class="pointer pointer3mvp">
+              </div>
+            </div>
+          </div>
+          <div class="pointer pointer1mvp" id="pointerScannermvp" onclick="mvpChange(this)">
+            <div class="pointer pointer2mvp">
+              <div class="pointer pointer3mvp">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-5 d-flex align-items-center px-5 my-5">
+          <div class="bpTextmvp">
             <div class="fs-1c">What's inside?</div>
             <div class="fs-6c fw-200">Click on the blue points to discover more</div>
           </div>
 
-          <div class="bpText d-none">
+          <div class="bpTextmvp d-none">
             <div class="fs-1c mb-2">CLOD Calendar</div>
             <div class="fs-6c fw-200 mb-4">The user interface is programmed in HTML/CSS/JavaScript and is displayed on a touch screen. </div>
             <div class="fs-3c">COMPONENTS</div>
@@ -182,7 +307,7 @@ One advantage of using a CLOD system is that it is completely customizable to fi
             </ul>
             </div>
 
-            <div class="bpText d-none">
+            <div class="bpTextmvp d-none">
               <div class="fs-1c mb-2">Cloud</div>
               <div class="fs-6c fw-200 mb-4">Thanks to a Raspberry we created a database with EAN codes, food properties and recipes.
               Through the database, the system can recognize food and sends instructions to the module and the calendar.</div>
@@ -193,7 +318,7 @@ One advantage of using a CLOD system is that it is completely customizable to fi
               </ul>
               </div>
 
-          <div class="bpText d-none">
+          <div class="bpTextmvp d-none">
             <div class="fs-1c mb-2">CLOD Module</div>
             <div class="fs-6c fw-200 mb-4">Inside the module we can find an Arduino mkr wifi 1010 which controls the sound speakers, the led lights and the proximity sensors and communicates with the scanner and calendar through the wifi connection.</div>
             <div class="fs-3c">COMPONENTS</div>
@@ -208,7 +333,7 @@ One advantage of using a CLOD system is that it is completely customizable to fi
             </div>
 
 
-            <div class="bpText d-none">
+            <div class="bpTextmvp d-none">
               <div class="fs-1c mb-2">CLOD Scanner</div>
               <div class="fs-6c fw-200 mb-4">Inside the scanner there is an Arduino mkr wifi 1010 that is connected to the barcode reader and communicates with the calendar and module through the wifi connection.</div>
               <div class="fs-3c">COMPONENTS</div>
@@ -223,38 +348,6 @@ One advantage of using a CLOD system is that it is completely customizable to fi
     </div>
   </div>
 
-  <!-- STORYBOARD -->
-  <div class="row d-flex justify-content-center screenDimension squareMobile align-items-center" style="margin-top:100px">
-    <div class="col">
-      <div class="fs-2c text-center">HOW TO USE IT</div>
-      <div class="row mx-4 rowStoryboard">
-        <div class="col-12 col-lg-4 colStoryboard">
-          <img src="assets/storyboard/01.png" class="storyboardImg">
-          <div class="fs-6c fw-200 text-center mt-2">Grab your shopping</div>
-        </div>
-        <div class="col-12 col-lg-4 colStoryboard">
-          <img src="assets/storyboard/02.png" class="storyboardImg">
-          <div class="fs-6c fw-200 text-center mt-2">Scan the food</div>
-        </div>
-        <div class="col-12 col-lg-4 colStoryboard">
-          <img src="assets/storyboard/03.png" class="storyboardImg">
-          <div class="fs-6c fw-200 text-center mt-2">Follow the instructions</div>
-        </div>
-        <div class="col-12 col-lg-4 colStoryboard">
-          <img src="assets/storyboard/04.png" class="storyboardImg">
-          <div class="fs-6c fw-200 text-center mt-2">Insert the food in the right CLOD</div>
-        </div>
-        <div class="col-12 col-lg-4 colStoryboard">
-          <img src="assets/storyboard/05.png" class="storyboardImg">
-          <div class="fs-6c fw-200 text-center mt-2">Keep easily track of the expiring date of your food</div>
-        </div>
-        <div class="col-12 col-lg-4 colStoryboard">
-          <img src="assets/storyboard/06.png" class="storyboardImg">
-          <div class="fs-6c fw-200 text-center mt-2">Follow the recipes suggested</div>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
   <script src="sketchPoster.js"></script>

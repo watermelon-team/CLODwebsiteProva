@@ -9,13 +9,65 @@ function accordationPoster(obj) {
   square.classList.add(obj.id);
 }
 
-var bpBtn = $(".pointer1");
-var bpBtn2 = $(".pointer2");
-var bpBtn3 = $(".pointer3");
-var bpImg = $('.bicpictureImg');
-var bpText = $('.bpText');
+
+
+function bigPictureChange(obj){
+
+  var bpBtn = $(".pointer1");
+  var bpBtn2 = $(".pointer2");
+  var bpBtn3 = $(".pointer3");
+  var bpImg = $('.bicpictureImg');
+  var bpText = $('.bpText');
+  var bpConnections = $('.Connections');
+
+  var bpActive = 0;
+
+  bpBtn.each(function(i) {
+    bpBtn.eq(i).removeClass('pointerActive');
+    if(obj.id == bpBtn[i].id){
+      bpBtn.eq(i).addClass('pointerActive');
+      bpActive = i+1;
+    }
+  })
+
+  bpBtn2.each(function(i) {
+    bpBtn2.eq(i).removeClass('pointerActive');
+    bpBtn2.eq(bpActive-1).addClass('pointerActive');
+  })
+
+  bpBtn3.each(function(i) {
+    bpBtn3.eq(i).removeClass('pointerActive');
+    bpBtn3.eq(bpActive-1).addClass('pointerActive');
+  })
+
+  bpImg.each(function(i) {
+    bpImg.eq(i).addClass('bigpictureInactive');
+    bpImg.eq(bpActive).removeClass('bigpictureInactive');
+  })
+
+  bpText.each(function(i) {
+    bpText.eq(i).addClass('d-none');
+    bpText.eq(bpActive).removeClass('d-none');
+  })
+
+  bpConnections.each(function(i) {
+    bpConnections.eq(i).addClass('connectionsInactive');
+    bpConnections.eq(bpActive-1).removeClass('connectionsInactive');
+  })
+
+
+
+}
+
 
 function mvpChange(obj){
+
+  var bpBtn = $(".pointer1mvp");
+  var bpBtn2 = $(".pointer2mvp");
+  var bpBtn3 = $(".pointer3mvp");
+  var bpImg = $('.bicpictureImgmvp');
+  var bpText = $('.bpTextmvp');
+
 
   var bpActive = 0;
 

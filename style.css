@@ -160,6 +160,14 @@ a{
     transition: 0.5s;
   }
 
+  .dimensionBg{
+    background-image: url("assets/dimension.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+
   .imgTech{
     height: 90vh;
   }
@@ -252,6 +260,13 @@ a{
     transition: 0.5s;
   }
 
+  .bicpictureImgmvp{
+    position: absolute;
+    width: 800px;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
   .Connections{
     position: absolute;
     width: 800px;
@@ -308,6 +323,35 @@ a{
   }
 
   .pointer3{
+    width:20px;
+    height:20px;
+    top: 50%;
+    left: 50%;
+  }
+
+  .pointer1mvp:hover{
+    background-color: rgba(126, 249, 151, 0.4)!important;
+    transition: 0.5s;
+  }
+
+  .pointer1mvp{
+    width:70px;
+    height:70px;
+    transform: translate(-50%, -50%)scale(130%);
+    animation-name: pointerAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  .pointer2mvp{
+    width:50px;
+    height:50px;
+    top: 50%;
+    left: 50%;
+  }
+
+  .pointer3mvp{
     width:20px;
     height:20px;
     top: 50%;
@@ -463,8 +507,8 @@ a{
   }
 
   .videoStyle{
-    width: 80vw;
-    height: calc(80vw/16*9);
+    width: 90vw;
+    height: calc(90vw/16*9);
   }
 
   .square{
