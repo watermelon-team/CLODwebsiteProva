@@ -490,9 +490,12 @@ a{
     .techText{
       position: absolute;
       width:70vw!important;
-      bottom: 20px;
+      bottom: 0px;
       right:-25%;
+      margin-top:150px;
       transform: translate(-50%, -50%);
+      background-color: var(--dark-blue);
+      min-height: 300px;
     }
 
     .menuIcon{
