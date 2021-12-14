@@ -88,7 +88,8 @@
                   </div>
                 </div>
                 <div class="row align-self-end">
-                  <p class="fs-6c fw-200 align-self-end">Bla bla bla  <p>
+                  <p class="fs-6c fw-200 align-self-end">Bla bla bla
+                  <p>
                 </div>
               </div>
             </div>
@@ -135,32 +136,124 @@
     </div>
   </div>
 
-  <!-- FEEDBACK -->
 
-  <div class="row d-flex justify-content-center screenDimension align-items-center squares">
+
+
+
+  <!-- SQUARE FEEDBACK -->
+
+  <div class="row d-flex justify-content-center screenDimension align-items-center">
     <div class="col">
+      <div class="row d-felx justify-content-center mb-5">
+        <div class="col-8">
+          <div class="fs-1c text-center">Feedbacks</div>
+          <div class="fs-6c fw-200 align-self-end text-center"> Thanks to the demo session we were able to define some possible improvements for this project that can take food management to a whole new level.
+          </div>
+        </div>
+      </div>
+      <dic class="row">
+    <div class="col">
+
       <div class="row mx-4">
-        <div class="col-12 col-xl-6 d-flex colSquaresLeft p-0">
-          <div class="square feedbackBg">
+        <div class="col-12 col-xl-6 d-flex  colSquaresLeft p-0">
+          <div class="square modularSystemBg" id="squareTech">
+            <div class="row" style="height:100%">
+              <div class="flex-column d-flex" style="">
+                <p class="fs-1c">Insights
+                <p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-12 col-xl-6 d-flex colSquaresright p-0">
           <div class="square">
-            <div class="row" style="height:100%">
-              <div class="flex-column d-flex" style="">
-                <div class="row mb-auto">
-                  <div class="col-12">
-                    <p class="fs-1c">Feedbacks
-                    </p>
+            <div class="accordion accordion-flush bg-transparent" id="accordionExample">
+              <div class="accordion-item bg-transparent">
+                <h2 class="accordion-header bg-transparent" id="headingOne">
+                  <button class="accordion-button text-white accordationTech bg-transparent" onclick="accordationTech(this)" id="modularSystemBg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    NO MORE SCAN
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse  bg-transparent collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body fw-200 fs-6c">
+                    Possible collaborations between some existing services like Amazon fresh or amazon go, connecting the database of the groceries that the user buys to CLOD, so that the user doesn’t have to scan the products once they get at home.
                   </div>
                 </div>
-                <div class="row align-self-end">
-                  <p class="fs-6c fw-200 align-self-end">Bla bla bla  <p>
+              </div>
+              <hr class="bg-white" style="height:1px; opacity:1" />
+              <div class="accordion-item  bg-transparent">
+                <h2 class="accordion-header  bg-transparent" id="headingTwo">
+                  <button class="accordion-button collapsed accordationTech bg-transparent" onclick="accordationTech(this)" id="trackerBg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    SHOPPING LIST
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse  bg-transparent collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body  bg-transparent  fw-200 fs-6c">
+                    Add a shopping list, connected to the smartphone, so that it becomes much easier to buy food at the grocery store, knowing also the food that already is at home, and when it expires.
+                  </div>
+                </div>
+              </div>
+              <hr class="bg-white" style="height:1px; opacity:1" />
+              <div class="accordion-item  bg-transparent">
+                <h2 class="accordion-header  bg-transparent" id="headingThree">
+                  <button class="accordion-button collapsed accordationTech bg-transparent" onclick="accordationTech(this)" id="guideBg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">
+                    TEMPERATURE FEEDBACK
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse  bg-transparent" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body  fw-200 fs-6c">
+                    Since our module is still in a prototype form, we got feedbacks about implementing some other visual information inside of it, for example a feedback about whether the module is at the correct temperature, or a sound feedback to alert the user that the door isn’t fully closed. </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
 
+  <!-- footer  -->
+  <div class="row d-flex justify-content-center align-items-center squares" style="margin-bottom:100px">
+    <div class="col-12 col-lg-10">
+        <div class="row mx-5 " >
+          <hr class="bg-white mb-5" style="opacity: 1; height: 1px" />
+          <div class="col p-0">
+            <img src="assets/logo-lightBlue.png" style="height: 50px">
+          </div>
+          <div class="col p-0">
+            <div class="fs-6c"><small>SITE STRUCTURE</small></div>
+            <div class=" fw-200"><a href="index.html" class="footerText"><small>Home</small></a></div>
+            <div class="fw-200"><a href="poster.html" class="footerText "><small>Concept poster</small></a></div>
+            <div class=" fw-200"><a href="mvp.html" class="footerText "><small>MVP</small></a></div>
+            <div class=" fw-200"><a href="presentation.html" class="footerText "><small>VIVA presentation</small></a></div>
+            <div class= "fw-200"><a href="test.html" class="footerText "><small>Demo test</small></a></div>
+            <div class="fw-200"><a href="team.html" class="footerText"><small>Meet the team</small></a></div>
+          </div>
+          <div class="col p-0">
+            <div class="fs-6c"><small>TEAM MEMBERS</small></div>
+            <div class=" fw-200"><a href="https://www.linkedin.com/in/elisa-manzoni-45919519b/" class="footerText"><small>Elisa Manzoni</small></a></div>
+            <div class="fw-200"><a href="https://www.linkedin.com/in/elio-raineri/" class="footerText "><small>Elio Raineri</small></a></div>
+            <div class=" fw-200"><a href="https://www.linkedin.com/in/micol-montenesi-profilo/" class="footerText "><small>Micol Montenesi</small></a></div>
+            <div class=" fw-200"><a href="https://www.linkedin.com/in/hilarypalazzolo/" class="footerText "><small>Hilary Palazzolo</small></a></div>
+            <div class= "fw-200"><a href="https://www.linkedin.com/in/nicole-beatrice-bonacina-8886a3208/" class="footerText "><small>Nicole Bonacina</small></a></div>
+          </div>
+          <div class="col p-0">
+            <div class="fs-6c"><small>TEACHING TEAM</small></div>
+            <div class="footerText fw-200"><small>Marco Ajovalist</small></div>
+            <div class="footerText fw-200"><small>Fabio Salice</small></div>
+            <div class="footerText fw-200"><small>Mariana Ciancia</small></div>
+          </div>
+      </div>
+      <div class="row mx-5 " >
+        <hr class="bg-white mb-2 mt-5" style="opacity: 1; height: 1px" />
+        <div class="col d-flex p-0">
+          <img src="assets/polimiLogo.png" style="height:50px">
+          <div class="footerText fw-200 ms-3"><small>MSC Digital and Interaction Design  <span class="mx-2"> | </span> Final Design Studio Course</small></div>
         </div>
       </div>
     </div>
