@@ -22,6 +22,39 @@ function bigPictureChange(obj){
 
   var bpActive = 0;
 
+  if($(obj).hasClass('pointerActive')){
+    $(obj).removeClass('pointerActive');
+
+    bpBtn2.each(function(i) {
+      bpBtn2.eq(i).removeClass('pointerActive');
+    })
+
+    bpBtn3.each(function(i) {
+      bpBtn3.eq(i).removeClass('pointerActive');
+    })
+
+    bpImg.each(function(i) {
+      if(i == 0){
+        bpImg.eq(0).removeClass('bigpictureInactive');
+      }
+      else{
+        bpImg.eq(i).addClass('mvpInactive');
+      }
+
+    })
+
+    bpText.each(function(i) {
+      bpText.eq(i).addClass('d-none');
+      bpText.eq(0).removeClass('d-none');
+    })
+
+    bpConnections.each(function(i) {
+      bpConnections.eq(i).addClass('connectionsInactive');
+    })
+
+  }
+  else{
+
   bpBtn.each(function(i) {
     bpBtn.eq(i).removeClass('pointerActive');
     if(obj.id == bpBtn[i].id){
@@ -55,7 +88,7 @@ function bigPictureChange(obj){
     bpConnections.eq(bpActive-1).removeClass('connectionsInactive');
   })
 
-
+}
 
 }
 

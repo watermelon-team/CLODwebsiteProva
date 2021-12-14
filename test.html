@@ -26,11 +26,11 @@
 <body class="readex bg-darkblue text-white ps-3 ps-xl-0">
 
   <!-- MENU -->
-  <div class="row rowMenu">
+  <div class="row rowMenu bgMenu">
     <div class="col">
     </div>
     <div class="col justify-content-center d-flex">
-      <img src="assets/logo-lightBlue.png" class="logoMenu">
+      <a href="index.html"><img src="assets/logo-lightBlue.png" class="logoMenu"></a>
     </div>
     <div class="col justify-content-end d-flex">
       <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#menuModal" style="z-index:2!important">
@@ -40,8 +40,8 @@
   </div>
 
   <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-fullscreen bg-blue">
-      <div class="modal-content bg-blue">
+    <div class="modal-dialog modal-fullscreen ">
+      <div class="modal-content bgModalMenu">
         <div class="modal-body">
           <div class="row" style="margin-top: 10vh;margin-left: 10vw; margin-right: 10vw;">
             <div class="col-6">
@@ -59,7 +59,11 @@
             </div>
             <div class="col-12 col-xl-6">
               <div class="fs-1c mb-4"><a href="presentation.html" class="menuText">VIVA presentation</a></div>
-              <div class="fs-1c mb-4"><a href="test.html" class="menuText">Demo test</a></div>
+              <div class="fs-1c mb-4"><a href="test.html" class="menuText text-bluec
+
+
+
+                ">Demo test</a></div>
               <div class="fs-1c mb-4"><a href="team.html" class="menuText">Meet the team</a></div>
             </div>
           </div>
@@ -68,34 +72,95 @@
     </div>
   </div>
 
-  <!-- STORYBOARD -->
-  <div class="row d-flex justify-content-center screenDimension squareMobile align-items-center">
+  <!-- INTRO -->
+
+  <div class="row d-flex justify-content-center screenDimension align-items-center squares">
     <div class="col">
-      <div class="fs-2c text-center">STORYBOARD</div>
+      <div class="row mx-4">
+        <div class="col-12 col-xl-6 d-flex colSquaresLeft p-0">
+          <div class="square">
+            <div class="row" style="height:100%">
+              <div class="flex-column d-flex" style="">
+                <div class="row mb-auto">
+                  <div class="col-12">
+                    <p class="fs-1c">Demo session
+                    </p>
+                  </div>
+                </div>
+                <div class="row align-self-end">
+                  <p class="fs-6c fw-200 align-self-end">Bla bla bla  <p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-6 d-flex colSquaresright p-0">
+          <div class="square testBg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STORYBOARD -->
+  <div class="row d-flex justify-content-center screenDimension squareMobile align-items-center" style="margin: 100px 0px;">
+    <div class="col">
+      <div class="fs-2c text-center">THE EXPERIENCE</div>
       <div class="row mx-4 rowStoryboard">
         <div class="col-12 col-lg-4 colStoryboard">
-          <img src="assets/storyboard/01.png" class="storyboardImg">
+          <img src="assets/test/test01.png" class="storyboardImg">
           <div class="fs-6c fw-200 text-center mt-2">A member of the team introduce the concept.</div>
         </div>
         <div class="col-12 col-lg-4 colStoryboard">
-          <img src="assets/storyboard/02.png" class="storyboardImg">
+          <img src="assets/test/test02.png" class="storyboardImg">
           <div class="fs-6c fw-200 text-center mt-2">The user choose a food and he scans it.</div>
         </div>
         <div class="col-12 col-lg-4 colStoryboard">
-          <img src="assets/storyboard/03.png" class="storyboardImg">
+          <img src="assets/test/test03.png" class="storyboardImg">
           <div class="fs-6c fw-200 text-center mt-2">The user insert the food in the right module thanks to light feedbacks.</div>
         </div>
         <div class="col-12 col-lg-4 colStoryboard">
-          <img src="assets/storyboard/04.png" class="storyboardImg">
+          <img src="assets/test/test04.png" class="storyboardImg">
           <div class="fs-6c fw-200 text-center mt-2">a member of the team makes the user imagine that time is passing. A food is expiring: an alert appears on the calendar and the module became red.</div>
         </div>
         <div class="col-12 col-lg-4 colStoryboard">
-          <img src="assets/storyboard/05.png" class="storyboardImg">
+          <img src="assets/test/test05.png" class="storyboardImg">
           <div class="fs-6c fw-200 text-center mt-2">The user take the food off the module. Then he starts to follow the suggested recipe.</div>
         </div>
         <div class="col-12 col-lg-4 colStoryboard">
-          <img src="assets/storyboard/06.png" class="storyboardImg">
+          <img src="assets/test/test06.png" class="storyboardImg">
           <div class="fs-6c fw-200 text-center mt-2">At the end the team shows the AR app to explain the difference composition of modules.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEEDBACK -->
+
+  <div class="row d-flex justify-content-center screenDimension align-items-center squares">
+    <div class="col">
+      <div class="row mx-4">
+        <div class="col-12 col-xl-6 d-flex colSquaresLeft p-0">
+          <div class="square feedbackBg">
+          </div>
+        </div>
+        <div class="col-12 col-xl-6 d-flex colSquaresright p-0">
+          <div class="square">
+            <div class="row" style="height:100%">
+              <div class="flex-column d-flex" style="">
+                <div class="row mb-auto">
+                  <div class="col-12">
+                    <p class="fs-1c">Feedbacks
+                    </p>
+                  </div>
+                </div>
+                <div class="row align-self-end">
+                  <p class="fs-6c fw-200 align-self-end">Bla bla bla  <p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>

@@ -26,11 +26,11 @@
 <body class="readex bg-darkblue text-white ps-3 ps-xl-0">
 
   <!-- MENU -->
-  <div class="row rowMenu">
+  <div class="row rowMenu" id="menu">
     <div class="col">
     </div>
     <div class="col justify-content-center d-flex">
-      <img src="assets/logo-lightBlue.png" class="logoMenu">
+      <a href="index.html"><img src="assets/logo-lightBlue.png" class="logoMenu"></a>
     </div>
     <div class="col justify-content-end d-flex">
       <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#menuModal" style="z-index:2!important">
@@ -40,8 +40,8 @@
   </div>
 
   <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-fullscreen bg-blue">
-      <div class="modal-content bg-blue">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content bgModalMenu">
         <div class="modal-body">
           <div class="row" style="margin-top: 10vh;margin-left: 10vw; margin-right: 10vw;">
             <div class="col-6">
@@ -53,7 +53,7 @@
           </div>
           <div class="row" style="margin-top: 150px; margin-left: 10vw; margin-right: 10vw;">
             <div class="col-12 col-xl-6">
-              <div class="fs-1c mb-4"><a href="index.html" class="menuText">Home</a></div>
+              <div class="fs-1c mb-4"><a href="index.html" class="menuText text-bluec">Home</a></div>
               <div class="fs-1c mb-4"><a href="poster.html" class="menuText">Concept poster</a></div>
               <div class="fs-1c mb-4"><a href="mvp.html" class="menuText">MVP</a></div>
             </div>
@@ -72,9 +72,9 @@
 
   <!-- VIDEO -->
 
-  <div class="row d-flex justify-content-center screenDimension align-items-center">
-    <div class="col d-flex justify-content-center">
-      <iframe src="https://player.vimeo.com/video/654868730?h=b7e3c360da?autoplay=1&muted=1" class="videoStyle" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  <div class="row d-flex justify-content-center screenDimension hero align-items-center">
+    <div class="col d-flex align-items-center justify-content-center">
+      <div class="text-center fs-1c" style="font-weight: 600"> FORGET FORGETTING <br> ABOUT YOUR FOOD</div>
     </div>
   </div>
 
@@ -452,6 +452,48 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- footer  -->
+  <div class="row d-flex justify-content-center align-items-center squares" style="margin-bottom:100px">
+    <div class="col-12 col-lg-10">
+        <div class="row mx-5 " >
+          <hr class="bg-white mb-5" style="opacity: 1; height: 1px" />
+          <div class="col p-0">
+            <img src="assets/logo-lightBlue.png" style="height: 50px">
+          </div>
+          <div class="col p-0">
+            <div class="fs-6c"><small>SITE STRUCTURE</small></div>
+            <div class="fs-6c fw-200"><small>Home</small></div>
+            <div class="fs-6c fw-200"><small>Concept poster</small></div>
+            <div class="fs-6c fw-200"><small>MVP</small></div>
+            <div class="fs-6c fw-200"><small>VIVA presentation</small></div>
+            <div class="fs-6c fw-200"><small>Demo test</small></div>
+            <div class="fs-6c fw-200"><small>Meet the team</small></div>
+          </div>
+          <div class="col p-0">
+            <div class="fs-6c"><small>TEAM MEMBERS</small></div>
+            <div class="fs-6c fw-200"><small>Elisa Manzoni</small></div>
+            <div class="fs-6c fw-200"><small>Elio Raineri</small></div>
+            <div class="fs-6c fw-200"><small>Hilary Palazzolo</small></div>
+            <div class="fs-6c fw-200"><small>Micol Montenesi</small></div>
+            <div class="fs-6c fw-200"><small>Nicole Bonacina</small></div>
+          </div>
+          <div class="col p-0">
+            <div class="fs-6c"><small>TEACHING TEAM</small></div>
+            <div class="fs-6c fw-200"><small>Marco Ajovalist</small></div>
+            <div class="fs-6c fw-200"><small>Fabio Salice</small></div>
+            <div class="fs-6c fw-200"><small>Mariana Ciancia</small></div>
+          </div>
+      </div>
+      <div class="row mx-5 " >
+        <hr class="bg-white mb-2 mt-5" style="opacity: 1; height: 1px" />
+        <div class="col d-flex p-0">
+          <img src="assets/polimiLogo.png" style="height:50px">
+          <div class="fs-6c fw-200 ms-3" style="transform:translate(-10%, 0%) scale(80%)"><small>MSC Digital and Interaction Design  |  Final Design Studio Course</small></div>
+        </div>
+      </iv>
     </div>
   </div>
 
